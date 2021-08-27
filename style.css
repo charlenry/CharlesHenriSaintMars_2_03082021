@@ -1,0 +1,32 @@
+#header {
+  display: flex;
+  border: solid red 1px;
+
+}
+img {
+  width: 100px;
+  height: 60px;
+}
+
+.logo_reservia {
+  width: 30%;
+//  background-color: #f1f1f1;
+ // border: solid green 1px;
+}
+
+.inter {
+  width: 60%;
+//  background-color: #f1f1f1;
+//  border: solid orange 1px;
+}
+
+.navbar {
+  width: 30%;
+  margin: auto;
+ // background-color: #f1f1f1;
+//  border: solid blue 1px;
+}
+
+.navbar a {
+  margin: 25px;
+}

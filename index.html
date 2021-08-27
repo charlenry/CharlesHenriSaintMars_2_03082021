@@ -5,42 +5,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1364265626.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <meta name="description" content="Réservia - trouvez votre hébergement pour des vacances de rêves en centre-ville ou en pleine nature">
   <meta name="keywords" content="Reservia,planifier les vacances, hébergements de vacances,hotel vacances, auberges de vacances, chambres d'hôtes, partir en vacances,vacances en centre-ville,vacances en ville, vacances en pleine nature, vacances dans la nature, activités de vacances">
   <title>Reservia - Trouvez votre hébergement et des activités pour des vacances de rêves en centre-ville ou en pleine nature</title>
 </head>
 <body>
-  <header>
-    <div id="logo">
+  <header id="header">
+    <div class="logo_reservia">
       <img src="./images/logo/Reservia.png" alt="Logo Reservia">
     </div>
-    <div id="navbar">
+    <div class="inter">
+      <p>           </p>
+    </div>
+    <div class="navbar">
       <a href="#">Hébergements</a>
       <a href="#">Activités</a>
       <a href="#">S'inscrire</a>
     </div>
   </header>
+
   <section id="section1">
     <div>
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en peine nature</p>
     </div>
+
     <div>
-      <form>
+      <form id="recherche">
         <input type="text" name="search" placeholder="Marseille, France">
         <input type="submit" value="Rechercher">
       </form>
     </div>
+
     <div>
-      <h2 id="filtres">Filtres</h2>
-      <form id="boutons_filtres">
-        <a href="#"><i class="fas fa-heart"></i>Economique</a>
-        <a href="#">Familial</a>
-        <a href="#">Romantique</a>
-        <a href="#">Animaux autorisés</a>
-      </div>
+      <h2 class="filtres">Filtres</h2>
+      <form id="formFiltres">
+        <button class="boutons_filtres"><i class='fas fa-money-bill'></i> Économique</button>
+        <button class="boutons_filtres"><i class="fas fa-child"></i> Familial</button>
+        <button class="boutons_filtres"><i class='fas fa-heart'></i> Romantique</button>
+        <button class="boutons_filtres"><i class='fas fa-dog'></i> Animaux autorisés</button>
+      </form>
+      <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dan cette ville</p>
     </div>
+
   </section>
+
 </body>
 </html>
