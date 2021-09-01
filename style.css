@@ -9,7 +9,7 @@ body {
   border: solid brown 1px;
 }
 
-.main {
+main {
   margin-left: 50px;
 }
 
@@ -31,7 +31,7 @@ header {
   /* border: solid green 1px; */
 }
 
-.navbar {
+nav {
  width: 50%;
  margin: auto;
  text-align: right;
@@ -39,7 +39,7 @@ header {
   
 }
 
-.navbar a {
+nav a {
   margin-right: 70px;
   font-size: 16px;
   font-weight : bold;
@@ -47,11 +47,11 @@ header {
   
 }
 
-.navbar a:first-child,  .navbar a:last-child{
+nav a:first-child,  .nav a:last-child{
   color: #0065FC;
  }
 
- .navbar a:nth-child(2) {
+ nav a:nth-child(2) {
   color: black;
  }
 
@@ -326,7 +326,7 @@ footer {
   background-color: #F2F2F2;
 }
 
-footer article {
+footer div {
   border: 1px solid blue;
   margin-left: 50px;
   min-width: 350px;
