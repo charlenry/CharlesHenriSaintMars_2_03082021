@@ -1,32 +1,335 @@
-#header {
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  max-width : 1440px;
+  margin: auto;
+  border: solid brown 1px;
+}
+
+.main {
+  margin-left: 50px;
+}
+
+
+/*      HEADER    */
+
+header {
   display: flex;
-  border: solid red 1px;
+  /* border: solid red 1px; */
 
 }
-img {
-  width: 100px;
-  height: 60px;
-}
-
 .logo_reservia {
-  width: 30%;
-//  background-color: #f1f1f1;
- // border: solid green 1px;
+  width: 110px;
+  height: 45px;
 }
 
-.inter {
-  width: 60%;
-//  background-color: #f1f1f1;
-//  border: solid orange 1px;
+.logo {
+  width: 50%;
+  /* border: solid green 1px; */
 }
 
 .navbar {
-  width: 30%;
-  margin: auto;
- // background-color: #f1f1f1;
-//  border: solid blue 1px;
+ width: 50%;
+ margin: auto;
+ text-align: right;
+ /* border: solid blue 1px; */
+  
 }
 
 .navbar a {
-  margin: 25px;
+  margin-right: 70px;
+  font-size: 16px;
+  font-weight : bold;
+  text-decoration: none;
+  
 }
+
+.navbar a:first-child,  .navbar a:last-child{
+  color: #0065FC;
+ }
+
+ .navbar a:nth-child(2) {
+  color: black;
+ }
+
+
+ /*      SECTION 1           */
+
+ input[type=text] {
+  width: 235px;
+  padding: 16px;
+  margin: 0px;
+  font-size: 18px;
+  font-weight : bold;
+  border: 1px solid #F2F2F2;
+}
+
+::placeholder {
+  color: black;
+  font-weight : bold;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: black;
+ font-weight : bold;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: black;
+ font-weight : bold;
+}
+
+input[type=submit] {
+  width: 150px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight : bold;
+  color: white;
+  background-color: #0065FC;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  margin-left: -5px;
+  border: 1px solid #0065FC;
+}
+
+.map-marker {
+  width: 50px;
+  padding: 17px 20px 17px 18px;
+  font-size: 18px;
+  color: black;
+  background-color: #F2F2F2;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  margin-right: -4px;
+}
+
+.filtres {
+  display: flex;
+  align-items: center;
+}
+
+.filtres > h2, .filtres > form {
+  margin-right: 25px;
+}
+
+.boutons_filtres {
+  margin-right: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 250px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight : bold;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  border: 3px solid #F2F2F2;
+}
+
+.icons {
+  border-radius: 50%;
+  padding: 18px;
+  margin-left: -18px;
+  width: 50px;
+  height: 50px;
+  background-color: #DEEBFF;
+}
+
+.boutons_filtres:hover {
+  background-color: #0065FC;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.section2 {
+  display: flex;
+	flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+
+/*        SECTION 2  GAUCHE               */
+
+.section2_gauche {
+  border: 1px solid red;
+  border-radius: 16px;
+  min-width: 65%;
+  height: auto;
+  margin-top: 15px;
+  margin-right: 40px;
+  background-color: #F2F2F2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.conteneur_vignettes_section2_gauche {
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid green;
+  max-width: fit-content;
+  height: max-content;
+}
+
+.vignette_section2_gauche {
+	margin : 20px;
+  padding: 5px;
+  border: 1px solid blue;
+  border-radius: 16px;
+  max-width:  280px;
+  max-height: 215px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vignette_section2_gauche img {
+ /* display: inline-block; */
+	border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+	width: 240px;
+  height: 110px;
+}
+
+.vignette_section2_gauche h3, .vignette_section2_gauche p {
+  line-height: 0.2;
+}
+
+
+/*        SECTION 2  DROITE               */
+
+.section2_droite {
+  border: 1px solid red;
+  border-radius: 16px;
+  min-width: 30%;
+  height: auto;
+  margin-top: 15px;
+  background-color: #F2F2F2;
+}
+
+.conteneur_vignettes_section2_droite {
+  display: flex;
+	flex-wrap: wrap;
+  justify-content: center;
+  max-width: fit-content;
+  height: max-content;
+  border: 1px solid green;
+}
+
+.vignette_section2_droite {
+	margin : 20px;
+  padding: 5px;
+  border: 1px solid blue;
+  border-radius: 16px;
+  min-width:  350px;
+  min-height: 140px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vignette_section2_droite img {
+  float: left;
+	border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+	width: 150px;
+  height: 145px;
+  margin-right: 10px;
+}
+
+.vignette_section2_droite p {
+  line-height: 0.8;
+}
+
+.retrait_35px {
+  text-indent: 35px;
+}
+
+.section2_droite > h2 {
+  display: inline-block;
+  margin-right: 100px;
+}
+
+
+/*      SECTION 3           */
+
+.section3 {
+  clear: both;
+  margin-bottom: 30px;
+  border: 1px solid green;
+}
+
+.conteneur_vignettes_section3 {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid indianred;
+}
+
+.vignette_section3_col1_col3 {
+  min-width:  250px;
+  min-height: 250px;
+  margin-left: 35px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vignette_section3_col1_col3 img {
+  width:  280px;
+  height: 440px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  border: 1px solid blue;
+}
+
+.vignette_section3_col2_col4 {
+  min-width:  300px;
+  min-height: 160px;
+  margin-left: 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vignette_section3_col2_col4 img {
+  width:  302px;
+  height: 170px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  border: 1px solid blue;
+}
+
+.vignette_section3_caption {
+  text-indent: 15px;
+  font-weight : bold;
+}
+
+.haut {
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.bas {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+
+/*   FOOTER  */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F2F2F2;
+}
+
+footer article {
+  border: 1px solid blue;
+  margin-left: 50px;
+  min-width: 350px;
+
+}
+
