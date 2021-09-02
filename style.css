@@ -6,7 +6,11 @@
 body {
   max-width : 1440px;
   margin: auto;
-  border: solid brown 1px;
+  /* border: solid brown 1px; */
+}
+
+img {
+  object-fit: cover;
 }
 
 main {
@@ -18,42 +22,54 @@ main {
 
 header {
   display: flex;
-  /* border: solid red 1px; */
+  height: 120px;
+  border: solid red 1px;
 
 }
+
 .logo_reservia {
   width: 110px;
   height: 45px;
+  /* border: solid red 1px; */
 }
 
 .logo {
-  width: 50%;
+  display: flex;
+  align-items: center;
+  width: 100%;
   /* border: solid green 1px; */
 }
 
 nav {
- width: 50%;
- margin: auto;
- text-align: right;
- /* border: solid blue 1px; */
-  
+  display: flex;
+  align-items: center;
+  border: solid red 1px;
+
 }
 
-nav a {
-  margin-right: 70px;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 99%;
+  width: 150px;
   font-size: 16px;
   font-weight : bold;
+  color: black;
   text-decoration: none;
-  
 }
 
-nav a:first-child,  nav a:last-child{
+.navbar:hover {
+  border-top: 2px solid #0065FC;
+  position: relative;
+  bottom: 1px;
   color: #0065FC;
 }
 
-nav a:nth-child(2) {
-  color: black;
-}
+.inscription {
+   display: flex;
+   align-items: center;
+ }
 
 
  /*      SECTION 1           */
@@ -83,7 +99,8 @@ input[type=text] {
  font-weight : bold;
 }
 
-input[type=submit] {
+.bouton_rechercher {
+  /* display: none; */
   width: 150px;
   padding: 16px;
   font-size: 18px;
@@ -92,7 +109,20 @@ input[type=submit] {
   background-color: #0065FC;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
-  margin-left: -5px;
+  margin-left: -12px;
+  border: 1px solid #0065FC;
+}
+
+.loupe_rechercher {
+  display: none;
+  width: 60px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight : bold;
+  color: white;
+  background-color: #0065FC;
+  border-radius: 16px;
+  margin-left: -18px;
   border: 1px solid #0065FC;
 }
 
@@ -114,6 +144,8 @@ input[type=submit] {
 
 .filtres > h2, .filtres > form {
   margin-right: 25px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .boutons_filtres {
@@ -121,22 +153,30 @@ input[type=submit] {
   margin-bottom: 20px;
   margin-top: 20px;
   max-width: 250px;
-  padding: 16px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight : bold;
   color: black;
   background-color: white;
   border-radius: 30px;
   border: 3px solid #F2F2F2;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .icons {
   border-radius: 50%;
-  padding: 18px;
-  margin-left: -18px;
+  margin-left: -9px;
+  margin-right: 5px;
   width: 50px;
   height: 50px;
   background-color: #DEEBFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .boutons_filtres:hover {
