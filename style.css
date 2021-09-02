@@ -373,3 +373,20 @@ footer div {
 
 }
 
+
+/*   ZONE RESPONSIVE   */
+
+/*   Affichage sur les tablettes    */
+@media screen and (max-width : 1280px){
+  
+}
+
+/*   Affichage sur les smartphones   */
+@media screen and (max-width : 960px){
+  main {
+    margin-left: 0px;
+  }
+
+  
+
+}
