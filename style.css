@@ -508,7 +508,7 @@ footer div {
     margin-right: 5px;
   }
 
-  .vignette_section3_col2_col4:nth-child() {
+  .vignette_section3_col2_col4:nth-child(2) {
     margin-left: 5px;
   }
 
