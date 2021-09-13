@@ -14,6 +14,9 @@ img {
   object-fit: cover;
 }
 
+
+
+ 
 main {
   /* margin: 0 50px; */
   border: solid red 1px;  /* Esquisse */
@@ -166,6 +169,10 @@ input[type=text] {
   height: 50px;
 }
 
+.boutons_filtres .fas {  /* Coloration des icones des boutons de filtres */
+  color:#0065FC;
+}
+
 .icons {
   display: flex;
   flex-shrink: 0;
@@ -196,6 +203,10 @@ input[type=text] {
   align-items: center;
 }
 
+.info_icon_circle .fa-info {
+  color:#0065FC;
+}
+
 .info_icon_circle {
   display: flex;
   flex-shrink: 0;
@@ -210,6 +221,14 @@ input[type=text] {
   margin-right: 10px;
 }
 
+/***** Coloration des étoiles *******/
+.fas.fa-star.bleu {
+  color:#0065FC;
+}
+
+.fas.fa-star.gris {
+  color:#F2F2F2;
+}
 
 /*************** SECTION 2 *******************/
 .section2 {
@@ -339,7 +358,7 @@ input[type=text] {
 
 .vignette_section3_col1_col3 {
   width:  305px;
-  height: 495px;
+  height: 514px;
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -399,130 +418,96 @@ footer div {
 
 /*+++++++++++++++ ZONE RESPONSIVE ++++++++++++++++++++*/
 
-/*************** VIEWPORT <= 1300PX *******************/
-@media screen and (max-width : 1300px) {
- /*************** SECTION 2 GAUCHE *******************/
-  .section2_gauche {
-    width: 100%;  /* */
-    margin-bottom: 10px;  /* */
-  }
 
-  .conteneur_vignettes_section2_gauche {
-    width: 80%;  /* */
-    margin-right: auto; /* */
-    margin-left: auto;  /* */
-  }
-
-/*************** SECTION 2 DROITE *******************/
-  .section2_droite {
-    width: 100%;  /* */
-    height: 300px;  /* */
-  }
-
-  .conteneur_vignettes_section2_droite {
-    justify-content: space-between;
-  }
-
-}
 
 
 
 /*************** VIEWPORT <= 1250PX *******************/
 
-@media screen and (max-width : 1250px) {
-/*************** SECTION 2 GAUCHE *******************/
+@media screen and (max-width : 1300px) {
+/* SECTION 2 GAUCHE */
   .section2_gauche {
-    width: 100%;  /* */
-    margin-bottom: 10px;  /* */
+    width: 70%;
+    margin-bottom: 10px;
   }
-
+  
   .conteneur_vignettes_section2_gauche {
-    width: 80%;  /* */
-    margin-right: auto; /* */
-    margin-left: auto;  /* */
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
-
-/*************** SECTION 2 DROITE *******************/
+  
+  .vignette_section2_gauche {
+    width: 30%;
+    height: 200px;
+  }
+  
+  .vignette_section2_gauche img {
+    width: 100%;
+    height: 110px;
+  }
+  
+  .vignette_section2_gauche h3, .vignette_section2_gauche p {
+    line-height: 0.2;
+    font-size: 14px;
+  }
+  
+  .retrait_35px {
+    font-size: 16px;
+  }
+  
+  /* SECTION 2 DROITE */
   .section2_droite {
-    width: 100%;  /* */
-    height: 300px;  /* */
+    width: 28%;
+    height: 630px;
+  }
+  
+  
+  .vignette_section2_droite {
+    width: 350px;
+    height: 158px;
+  }
+  
+  .vignette_section2_droite img {
+    width: 150px;
+    height: 100%;
+  }
+  
+  .vignette_section2_droite h3, .vignette_section2_droite p {
+    line-height: 1.2;
+    font-size: 14px;
   }
 
-  .conteneur_vignettes_section2_droite {
-    justify-content: space-between;
+  .section2_droite > h2 {
+    margin-right: 80px;
   }
 
-/*************** SECTION 3 *******************/
-  .section3 {
-    clear: both;
-    margin-bottom: 30px;
-    border: 1px solid green;  /* Esquisse */
-    width: 100%;
-  }
-
-  .conteneur_vignettes_section3 {
-    border: 1px solid green;  /* Esquisse */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    align-content: space-between;
-    justify-content: space-between;
-  }
-
+/*************** SECTION 3 **************/
   .vignette_section3_col1_col3 {
-    width:  100%;
-    height: 250px;
-    margin: 5px 0px;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 250px;
+    height: 514px;
+    font-size: 14px;
   }
 
   .vignette_section3_col1_col3 img {
-    width:  100%;
-    height: 200px;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-    border: 1px solid blue;  /* Esquisse */
+    width: 100%;
+    height: 440px;
   }
-
-  .conteneur_vignettes_section3_col2_col4 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
-  }
-
 
   .vignette_section3_col2_col4 {
-    flex-grow: 1;
-    height: 250px;
-    border-radius: 16px;
-    margin: 5px auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .vignette_section3_col2_col4:nth-child(1) {
-    margin-right: 5px;
-  }
-
-  .vignette_section3_col2_col4:nth-child(2) {
-    margin-left: 5px;
+    width: 240px;
+    height: 235px;
+    font-size: 14px;
   }
 
   .vignette_section3_col2_col4 img {
-    width:  100%;
-    height: 200px;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-    border: 1px solid blue;  /* Esquisse */
+    width: 100%;
+    height: 170px;
+
   }
 
   .vignette_section3_caption {
-    text-indent: 15px;
-    font-weight : bold;
+    font-size: 14px;
   }
 
 }
@@ -557,7 +542,7 @@ footer div {
     padding: 5px;
     border: 1px solid blue;  /* Esquisse */
     border-radius: 16px;
-    max-width:  280px;
+    width:  280px;
     height: 215px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -580,18 +565,18 @@ footer div {
     border: 1px solid red;
     border-radius: 16px;
     width: 100%;
-    height: 600px;
+    height: 220px;
     background-color: #F2F2F2;
   }
 
   .conteneur_vignettes_section2_droite {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
     width: 100%;
-    height: 500px;
+    height: 160px;
     border: 1px solid green;  /* Esquisse */
   }
 
@@ -599,7 +584,7 @@ footer div {
     padding: 5px;
     border: 1px solid blue;  /* Esquisse */
     border-radius: 16px;
-    width:  100%;
+    width:  32%;
     height: 158px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -633,7 +618,6 @@ footer div {
 
 /*************** SECTION 3 *******************/
   .section3 {
-    clear: both;
     margin-bottom: 30px;
     border: 1px solid green;  /* Esquisse */
     width: 100%;
@@ -647,6 +631,7 @@ footer div {
     width: 100%;
     align-content: space-between;
     justify-content: space-between;
+    gap: 10px;
     border: 1px solid indianred;  /* Esquisse */
   }
 
@@ -671,6 +656,7 @@ footer div {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
   }
 
   .vignette_section3_col2_col4 {
@@ -726,7 +712,7 @@ footer div {
     padding: 5px;
     border: 1px solid blue;  /* Esquisse */
     border-radius: 16px;
-    max-width:  245px;
+    width:  245px;
     height: 215px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -939,6 +925,10 @@ footer div {
     margin-left: -18px;
     border: 1px solid #0065FC;
   }
+
+  /* .loupe_rechercher .fa-search {
+    color:white;
+  } */
 
 /*************** SECTION FILTRES *******************/
 .filtres {

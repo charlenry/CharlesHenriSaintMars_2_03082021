@@ -1,6 +1,0 @@
-{
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
-  "editor.hover.delay": 3000,
-  "editor.minimap.enabled": false
-}
