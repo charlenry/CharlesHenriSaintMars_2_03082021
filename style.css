@@ -7,16 +7,13 @@ body {
   border: 1px solid #F2F2F2;  /* Esquisse */
   max-width : 1440px;
   margin: auto;
-  
+
 }
 
 img {
   object-fit: cover;
 }
 
-
-
- 
 main {
   /* margin: 0 50px; */
   border: solid red 1px;  /* Esquisse */
@@ -213,7 +210,6 @@ input[type=text] {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin-right: 5px;
   width: 30px;
   height: 30px;
   background-color: white;
@@ -230,6 +226,20 @@ input[type=text] {
   color:#F2F2F2;
 }
 
+.decoration_lien {
+  text-decoration: none;
+}
+
+.decoration_lien:visited {
+  color: black;
+}
+
+.decoration_lien:hover {
+  color: #0065FC;
+}
+
+
+
 /*************** SECTION 2 *******************/
 .section2 {
   display: flex;
@@ -238,13 +248,13 @@ input[type=text] {
   justify-content: space-between;
   align-content: space-between;
   margin-bottom: 25px;
-  /* width: 100%; */
+  /*width: 100%;*/ 
 }
 
 
 /*************** SECTION 2 GAUCHE *******************/
 .section2_gauche {
-  border: 1px solid red;
+  border: 1px solid red;  /* Esquisse */
   border-radius: 16px;
   width: 900px;
   height: 630px;
@@ -306,7 +316,6 @@ input[type=text] {
 }
 
 .vignette_section2_droite {
-  padding: 5px;
   border: 1px solid blue;   /* Esquisse */
   border-radius: 16px;
   width:  350px;
@@ -328,13 +337,19 @@ input[type=text] {
   line-height: 0.8;
 }
 
-.retrait_35px {
-  text-indent: 35px;
+.titre_populaires {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.section2_droite > h2 {
-  display: inline-block;
-  margin-right: 100px;
+.chart-line {
+  margin-right: 15px;
+}
+
+.fas.fa-chart-line {
+  font-size: 24px;
 }
 
 
@@ -342,7 +357,7 @@ input[type=text] {
 .section3 {
   border: 1px solid green;  /* Esquisse */
   clear: both;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -368,10 +383,10 @@ input[type=text] {
   height: 440px;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
-  border: 1px solid blue;
+  border: 1px solid blue;  /* Esquisse */
 }
 
-.conteneur_vignettes_section3_col2_col4 {
+.conteneur_vignettes_section3_col2, .conteneur_vignettes_section3_col4 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -379,19 +394,53 @@ input[type=text] {
 
 }
 
-.vignette_section3_col2_col4 {
+.vignette_section3_col2, .vignette_section3_col4 {
   width:  305px;
-  height: 235px;
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.vignette_section3_col2_col4 img {
+.vignette_section3_col2 img, .vignette_section3_col4 img {
   width:  305px;
-  height: 170px;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
   border: 1px solid blue;   /* Esquisse */
+}
+
+/****** Colonne 2 **********/
+.vignette_section3_col2.row1 {
+  height: 265px;
+}
+
+.vignette_section3_col2.row1 img {
+  height: 200px;
+}
+
+.vignette_section3_col2.row2 {
+  height: 200px;
+}
+
+.vignette_section3_col2.row2 img {
+  height: 130px;
+  object-position: 0px -8px;
+}
+
+/***** Colonne 4 ******/
+.vignette_section3_col4.row1 {
+  height: 210px;
+}
+
+.vignette_section3_col4.row1 img {
+  height: 145px;
+  object-position: 0px 0px;
+}
+
+.vignette_section3_col4.row2 {
+  height: 245px;
+}
+
+.vignette_section3_col4.row2 img {
+  height: 170px;
 }
 
 .vignette_section3_caption {
@@ -404,8 +453,9 @@ input[type=text] {
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 9%;
   background-color: #F2F2F2;
+  margin-top: 20px;
 }
 
 footer div {
@@ -418,11 +468,7 @@ footer div {
 
 /*+++++++++++++++ ZONE RESPONSIVE ++++++++++++++++++++*/
 
-
-
-
-
-/*************** VIEWPORT <= 1250PX *******************/
+/*************** VIEWPORT <= 1300PX *******************/
 
 @media screen and (max-width : 1300px) {
 /* SECTION 2 GAUCHE */
@@ -430,49 +476,46 @@ footer div {
     width: 70%;
     margin-bottom: 10px;
   }
-  
+
   .conteneur_vignettes_section2_gauche {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
-  
+
   .vignette_section2_gauche {
     width: 30%;
     height: 200px;
   }
-  
+
   .vignette_section2_gauche img {
     width: 100%;
     height: 110px;
   }
-  
+
   .vignette_section2_gauche h3, .vignette_section2_gauche p {
     line-height: 0.2;
     font-size: 14px;
   }
-  
-  .retrait_35px {
-    font-size: 16px;
-  }
-  
+
+
   /* SECTION 2 DROITE */
   .section2_droite {
     width: 28%;
     height: 630px;
   }
-  
-  
+
+
   .vignette_section2_droite {
     width: 350px;
     height: 158px;
   }
-  
+
   .vignette_section2_droite img {
     width: 150px;
     height: 100%;
   }
-  
+
   .vignette_section2_droite h3, .vignette_section2_droite p {
     line-height: 1.2;
     font-size: 14px;
@@ -491,18 +534,16 @@ footer div {
 
   .vignette_section3_col1_col3 img {
     width: 100%;
-    height: 440px;
   }
 
-  .vignette_section3_col2_col4 {
+  .vignette_section3_col2, .vignette_section3_col4 {
     width: 240px;
-    height: 235px;
     font-size: 14px;
   }
 
-  .vignette_section3_col2_col4 img {
+  .vignette_section3_col2 img, .vignette_section3_col4 img {
     width: 100%;
-    height: 170px;
+    /* height: 170px; */
 
   }
 
@@ -510,69 +551,32 @@ footer div {
     font-size: 14px;
   }
 
+  footer div {
+    width: 300px;
+  }
+
 }
 
 
 
-/************ VIEWPORT <= 1080PX (TABLETTES) ***************/
+/******** VIEWPORT <= 1080PX (TABLETTES) *********/
 
 @media screen and (max-width : 1080px) {
 /*************** SECTION 2 GAUCHE *******************/
   .section2_gauche {
     border: 1px solid red;  /* Esquisse */
-    border-radius: 16px;
     width: 100%;
-    height: 630px;
-    background-color: #F2F2F2;
-
-  }
-
-  .conteneur_vignettes_section2_gauche {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
-    border: 1px solid green;  /* Esquisse */
-    width: 100%;
-    height: 500px;
-  }
-
-  .vignette_section2_gauche {
-    padding: 5px;
-    border: 1px solid blue;  /* Esquisse */
-    border-radius: 16px;
-    width:  280px;
-    height: 215px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .vignette_section2_gauche img {
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-    width: 100%;
-    height: 110px;
-  }
-
-  .vignette_section2_gauche h3, .vignette_section2_gauche p {
-    line-height: 0.2;
   }
 
 
  /*************** SECTION 2 DROITE *******************/
   .section2_droite {
-    border: 1px solid red;
-    border-radius: 16px;
+    border: 1px solid red; /* Esquisse */
     width: 100%;
-    height: 220px;
-    background-color: #F2F2F2;
+    height: 240px;
   }
 
   .conteneur_vignettes_section2_droite {
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
     width: 100%;
@@ -581,126 +585,119 @@ footer div {
   }
 
   .vignette_section2_droite {
-    padding: 5px;
     border: 1px solid blue;  /* Esquisse */
-    border-radius: 16px;
     width:  32%;
-    height: 158px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .vignette_section2_droite img {
-    float: left;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    width: 150px;
-    height: 100%;
-    margin-right: 10px;
-  }
-
-  .vignette_section2_droite p {
-    line-height: 0.8;
-  }
-
-  .retrait_35px {
-    text-indent: 35px;
-  }
-
-  .section2_droite > h2 {
-    display: inline-block;
-    margin-right: 100px;
-  }
-
-  .conteneur_vignettes_section3 {
-    flex-direction: column;
-  }
-
-/*************** SECTION 3 *******************/
-  .section3 {
-    margin-bottom: 30px;
-    border: 1px solid green;  /* Esquisse */
-    width: 100%;
-  }
-
-  .conteneur_vignettes_section3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    align-content: space-between;
-    justify-content: space-between;
-    gap: 10px;
-    border: 1px solid indianred;  /* Esquisse */
-  }
-
-  .vignette_section3_col1_col3 {
-    width:  100%;
-    height: 250px;
-    /* margin-bottom: 16px; */
-    border-radius: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .vignette_section3_col1_col3 img {
-    border: 1px solid blue;  /* Esquisse */
-    width:  100%;
-    height: 200px;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-  }
-
-  .conteneur_vignettes_section3_col2_col4 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-  }
-
-  .vignette_section3_col2_col4 {
-    flex-grow: 1;
-    height: 250px;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .vignette_section3_col2_col4 img {
-    border: 1px solid blue;  /* Esquisse */
-    width:  100%;
-    height: 200px;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-  }
-
-  .vignette_section3_caption {
-    text-indent: 15px;
-    font-weight : bold;
   }
 
 }
 
 
 
+/*************** VIEWPORT <= 1024PX *******************/
+@media screen and (max-width : 1024px) {
+/********** SECTION 1 ************/
+  .boutons_filtres {
+    font-size: 20px;
+  }
+
+/************ SECTION 2 DROITE **********/
+  .section2_droite {
+    height: 240px;
+  }
+  
+
+
+/*************** SECTION 3 *******************/
+  .section3 {
+    border: 1px solid green;  /* Esquisse */
+  }
+
+  .conteneur_vignettes_section3 {
+    border: 1px solid indianred;  /* Esquisse */
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .vignette_section3_col1_col3 {
+    width:  100%;
+    height: 250px;
+  }
+
+  .vignette_section3_col1_col3 img {
+    border: 1px solid blue;  /* Esquisse */
+    width:  100%;
+    height: 200px;
+  }
+
+  .conteneur_vignettes_section3_col2, .conteneur_vignettes_section3_col4 {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .vignette_section3_col2, .vignette_section3_col4 {
+    flex-grow: 1;
+  }
+
+  .vignette_section3_col2.row1, .vignette_section3_col2.row2, .vignette_section3_col4.row1, .vignette_section3_col4.row2 {
+    height: 250px;
+  }
+
+
+  .vignette_section3_col2 img, .vignette_section3_col4 img {
+    width:  100%;
+    border: 1px solid blue;  /* Esquisse */
+  }
+
+  .vignette_section3_col2.row1 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
+    height: 200px;
+  }
+
+  .vignette_section3_col2.row2 img {
+    height: 200px;
+    object-position: 0px -24px;
+  }
+  
+ }
+
+
+ /************* VIEWPORT <= 980PX ****************/
+@media screen and (max-width : 980px) {
+ /********** SECTION 1 ************/
+    .boutons_filtres {
+      font-size: 19px;
+    }
+
+
+    .vignette_section2_droite img {
+      width: 130px;
+      height: 100%;
+    }
+
+/********* SECTION 3 **********/
+    .vignette_section3_col2.row2 img {
+      height: 200px;
+      object-position: 0px -15px;
+    }
+
+}
+ 
 
 /*************** VIEWPORT <= 880PX *******************/
 @media screen and (max-width : 880px) {
-
-  /*************** SECTION 2 GAUCHE *******************/
+ /*************** SECTION 2 GAUCHE *******************/
   .section2_gauche {
     border: 1px solid red;  /* Esquisse */
-    border-radius: 16px;
     width: 100%;
     height: 630px;
-    background-color: #F2F2F2;
-
-  }
+   }
 
   .conteneur_vignettes_section2_gauche {
     border: 1px solid green;  /* Esquisse */
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
@@ -709,18 +706,12 @@ footer div {
   }
 
   .vignette_section2_gauche {
-    padding: 5px;
     border: 1px solid blue;  /* Esquisse */
-    border-radius: 16px;
     width:  245px;
     height: 215px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .vignette_section2_gauche img {
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
     width: 100%;
     height: 110px;
   }
@@ -734,120 +725,87 @@ footer div {
 
   .section2_droite {
     border: 1px solid red;  /* Esquisse */
-    border-radius: 16px;
     width: 100%;
     height: auto;
-    background-color: #F2F2F2;
   }
 
   .conteneur_vignettes_section2_droite {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
     width: 100%;
     height: 500px;
-    border: 1px solid green;
+    border: 1px solid green; /* Esquisse */
   }
 
   .vignette_section2_droite {
-    padding: 5px;
     border: 1px solid blue;  /* Esquisse */
-    border-radius: 16px;
     width:  100%;
     height: 158px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .vignette_section2_droite img {
     float: left;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    width: 150px;
+    width: 300px;
     height: 100%;
-    margin-right: 10px;
+    margin-right: 14px;
   }
 
-  .vignette_section2_droite p {
-    line-height: 0.8;
+  .vignette_section2_droite h3, .vignette_section2_droite p {
+    line-height: 1;
+    font-size: 18px;
   }
 
-  .retrait_35px {
-    text-indent: 35px;
-  }
-
-  .section2_droite > h2 {
-    display: inline-block;
-    margin-right: 100px;
-  }
-
-  .conteneur_vignettes_section3 {
-    flex-direction: column;
-  }
 
 /*************** SECTION 3 *******************/
 
   .section3 {
-    clear: both;
-    margin-bottom: 30px;
     border: 1px solid green;  /* Esquisse */
-    width: 100%;
   }
 
   .conteneur_vignettes_section3 {
     border: 1px solid indianred;  /* Esquisse */
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     height: auto;
     width: 100%;
     align-content: space-between;
     justify-content: space-between;
+    gap: 10px;
   }
 
   .vignette_section3_col1_col3 {
     width:  100%;
     height: 250px;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .vignette_section3_col1_col3 img {
     border: 1px solid blue;  /* Esquisse */
     width:  100%;
     height: 200px;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
   }
 
-  .conteneur_vignettes_section3_col2_col4 {
-    display: flex;
-    flex-wrap: wrap;
+  .conteneur_vignettes_section3_col2, .conteneur_vignettes_section3_col4 {
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
   }
 
-  .vignette_section3_col2_col4 {
+  .vignette_section3_col2, .vignette_section3_col4 {
     flex-grow: 1;
+  }
+
+  .vignette_section3_col2.row1, .vignette_section3_col2.row2, .vignette_section3_col4.row1, .vignette_section3_col4.row2 {
     height: 250px;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
 
-  .vignette_section3_col2_col4 img {
+  .vignette_section3_col2 img, .vignette_section3_col4 img {
     width:  100%;
-    height: 200px;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
     border: 1px solid blue;  /* Esquisse */
   }
 
-  .vignette_section3_caption {
-    text-indent: 15px;
-    font-weight : bold;
+  .vignette_section3_col2.row1 img, .vignette_section3_col2.row2 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
+    height: 200px;
   }
 
 }
@@ -908,7 +866,7 @@ footer div {
     width: 100%
   }
 
-/*************** FORMULAIRE RECHERCHER *******************/
+/*********** FORMULAIRE RECHERCHER ****************/
   .bouton_rechercher {
     display: none;
   }
@@ -977,77 +935,63 @@ footer div {
   .vignette_section2_gauche {
     border: 1px solid blue;  /* Esquisse */
     flex-grow: 1;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     padding: 5px;
-    border-radius: 16px;
     width: 100%;
-    height: 215px;
+    height: 358px;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .vignette_section2_gauche img {
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-    width: 100%;
-    height: 110px;
+    min-width: 100%; 
+    max-height: 268px;
+    width: auto;
+    height: auto;
   }
 
   .vignette_section2_gauche h3, .vignette_section2_gauche p {
     line-height: 0.2;
+    font-size: 15px;
   }
 
 
 /*************** SECTION 2 DROITE *******************/
   .section2_droite {
     border: 1px solid red;  /* Esquisse */
-    border-radius: 16px;
     width: 100%;
     height: auto;
     margin-bottom: 10px;
-    background-color: #F2F2F2;
   }
 
   .conteneur_vignettes_section2_droite {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    /* margin-left: auto;
+    margin-right: auto; */
     width: 100%;
     height: auto;
     border: 1px solid green;  /* Esquisse */
   }
 
   .vignette_section2_droite {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     padding: 5px;
     border: 1px solid blue;  /* Esquisse */
-    border-radius: 16px;
     width:  100%;
     height: 158px;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .vignette_section2_droite img {
-    float: left;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    width: 150px;
+    width: 250px;
     height: 100%;
     margin-right: 10px;
   }
 
-  .vignette_section2_droite p {
-    line-height: 0.8;
-  }
-
-  .retrait_35px {
-    text-indent: 35px;
-  }
-
-  .section2_droite > h2 {
-    display: inline-block;
-    margin-right: 100px;
+  .vignette_section2_droite h3, .vignette_section2_droite p {
+    line-height: 1;
+    font-size: 18px;
   }
 
 
@@ -1065,46 +1009,47 @@ footer div {
     flex-direction: column;
     height: auto;
     width: 100%;
-    /* align-content: space-between; */
-    /* justify-content: space-between; */
     border: 1px solid indianred;  /* Esquisse */
   }
 
   .vignette_section3_col1_col3 {
     width:  100%;
-    height: 250px;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 380px;
   }
 
   .vignette_section3_col1_col3 img {
     border: 1px solid blue;  /* Esquisse */
     width:  100%;
-    height: 200px;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
+    height: 330px;
   }
 
-  .conteneur_vignettes_section3_col2_col4 {
+  .conteneur_vignettes_section3_col2, .conteneur_vignettes_section3_col2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
 
-  .vignette_section3_col2_col4 {
+  .vignette_section3_col2, .vignette_section3_col4 {
     flex-grow: 1;
     width: 100%;
-    height: 250px;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .vignette_section3_col2_col4 img {
-    border: 1px solid blue;  /* Esquisse */
+  .vignette_section3_col2.row1, .vignette_section3_col2.row2, .vignette_section3_col4.row1, .vignette_section3_col4.row2 {
+    height: 380px;
+  }
+
+  .vignette_section3_col2 img, .vignette_section3_col4 img {
     width:  100%;
-    height: 200px;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
+    border: 1px solid blue;  /* Esquisse */
+  }
+
+  .vignette_section3_col2.row1 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
+    height: 330px;
+  }
+
+  .vignette_section3_col2.row2 img {
+    height: 330px;
+    object-position: 0px 0px;
   }
 
   .vignette_section3_caption {
@@ -1114,6 +1059,43 @@ footer div {
 
 }
 
+
+/*************** VIEWPORT <= 580PX *******************/
+@media screen and (max-width : 580px) {
+/******** SECTION 2 DROITE *******/
+.vignette_section2_droite img {
+  width: 210px;
+  margin-right: 10px;
+}
+
+
+/********* SECTION 3 ********/
+  .vignette_section3_col1_col3 {
+    width:  100%;
+    height: 300px;
+  }
+
+  .vignette_section3_col1_col3 img {
+    border: 1px solid blue;  /* Esquisse */
+    width:  100%;
+    height: 250px;
+  }
+
+  .vignette_section3_col2.row1, .vignette_section3_col2.row2, .vignette_section3_col4.row1, .vignette_section3_col4.row2 {
+    height: 300px;
+  }
+
+  .vignette_section3_col2.row1 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
+    height: 250px;
+  }
+
+  .vignette_section3_col2.row2 img {
+    height: 250px;
+    object-position: 0px 0px;
+  }
+}
+
+
 /*************** VIEWPORT <= 575PX *******************/
 @media screen and (max-width : 575px) {
   .info {
@@ -1121,9 +1103,297 @@ footer div {
     align-items: center;
     align-items: center;
   }
-  
+
   .info_icon_circle {
     flex-shrink: 0;
     margin-bottom: 27px;
   }
+
+  .vignette_section3_col2.row2 img {
+    height: 250px;
+    object-position: 0px 0px;
+  }
+}
+
+
+/************* VIEWPORT <= 500PX *****************/
+@media screen and (max-width : 500px) {
+/******* SECTION 2 GAUCHE ***********/
+  .vignette_section2_gauche {
+    width: 100%;
+    height: 266px;
+  }
+
+  .vignette_section2_gauche img {
+    min-width: 100%; 
+    max-height: 176px;
+  }
+ 
+/******** SECTION 2 DROITE *******/
+
+  .vignette_section2_droite img {
+    width: 200px;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+
+/********* SECTION 3 *********/
+  .vignette_section3_col1_col3 {
+    width:  100%;
+    height: 250px;
+  }
+
+  .vignette_section3_col1_col3 img {
+    border: 1px solid blue;  /* Esquisse */
+    width:  100%;
+    height: 200px;
+  }
+
+  .vignette_section3_col2.row1, .vignette_section3_col2.row2, .vignette_section3_col4.row1, .vignette_section3_col4.row2 {
+    height: 250px;
+  }
+
+  .vignette_section3_col2.row1 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
+    height: 200px;
+  }
+
+  .vignette_section3_col2.row2 img {
+    height: 200px;
+    object-position: 0px -10px;
+  }
+
+  .logo_reservia {
+    margin-left: 20%;
+  }
+
+}
+
+
+
+/*************** VIEWPORT <= 425PX *****************/
+@media screen and (max-width : 425px) {
+  /******** SECTION 1 *************/
+  .section1 h1 {
+    font-size: 30px;
+  }
+
+  .section1 p {
+    font-size: 22px;
+  }
+
+  .conteneur_filtres .info {
+    font-size: 20px;
+  }
+
+  /******* SECTION 2 GAUCHE ***********/
+  .vignette_section2_gauche {
+    width: 100%;
+    height: 240px;
+  }
+
+  .vignette_section2_gauche img {
+    min-width: 100%; 
+    max-height: 150px;
+  }
+  
+  /******* SECTION 2 DROITE *******/
+
+  .vignette_section2_droite img {
+    width: 170px;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+
+  /******** SECTION 3 *********/
+  .vignette_section3_col1_col3 {
+    width:  100%;
+    height: 250px;
+  }
+
+  .vignette_section3_col1_col3 img {
+    border: 1px solid blue;  /* Esquisse */
+    width:  100%;
+    height: 200px;
+    object-position: 0px 0px;
+  }
+
+  .vignette_section3_col2.row1, vignette_section3_col2.row2, vignette_section3_col4.row1, vignette_section3_col4.row2 {
+    height: 250px;
+  }
+
+  .vignette_section3_col2.row1 img, vignette_section3_col4.row1 img, vignette_section3_col4.row2 img {
+    height: 200px;
+  }
+
+  .vignette_section3_col2.row2 img {
+    height: 200px;
+    object-position: 0px 10px;
+  }
+
+  .logo_reservia {
+    margin-left: 16%;
+  }
+
+}
+
+
+  /*************** VIEWPORT <= 375PX *****************/
+@media screen and (max-width : 375px) {
+  /******** SECTION 1 *************/
+  .section1 h1 {
+    font-size: 26px;
+  }
+
+  .section1 p {
+    font-size: 20px;
+  }
+
+  input[type=text] {
+    width: 250px;
+  }
+
+  .boutons_filtres {
+    font-size: 17px;
+  }
+
+  .info_icon_circle {
+    margin-bottom: 20px;
+  }
+
+  .conteneur_filtres .info {
+    font-size: 16px;
+  }
+
+  /******* SECTION 2 GAUCHE ***********/
+  .vignette_section2_gauche {
+    width: 100%;
+    height: 222px;
+  }
+
+  .vignette_section2_gauche img {
+    min-width: 100%; 
+    max-height: 132px;
+  }
+  
+  /******* SECTION 2 DROITE *******/
+
+  .vignette_section2_droite img {
+    width: 150px;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+
+  /******** SECTION 3 *********/
+  .vignette_section3_col1_col3 {
+    width:  100%;
+    height: 214px;
+  }
+
+  .vignette_section3_col1_col3 img {
+    border: 1px solid blue;  /* Esquisse */
+    width:  100%;
+    height: 164px;
+    object-position: 0px 0px;
+  }
+
+  .vignette_section3_col2.row1, vignette_section3_col2.row2, vignette_section3_col4.row1, vignette_section3_col4.row2 {
+    height: 214px;
+  }
+
+  .vignette_section3_col2.row1 img, vignette_section3_col4.row1 img, vignette_section3_col4.row2 img {
+    height: 164px;
+  }
+
+  .vignette_section3_col2.row2 img {
+    height: 164px;
+    object-position: 0px 0px;
+  }
+
+  .logo_reservia {
+    margin-left: 10%;
+  }
+
+}
+
+
+/*************** VIEWPORT <= 320PX *****************/
+@media screen and (max-width : 320px) {
+  /******** SECTION 1 *************/
+  .section1 h1 {
+    font-size: 22px;
+  }
+
+  .section1 p {
+    font-size: 17px;
+  }
+
+  input[type=text] {
+    width: 200px;
+  }
+
+  .boutons_filtres {
+    font-size: 12px;
+  }
+
+  .info_icon_circle {
+    margin-bottom: 20px;
+  }
+
+  .conteneur_filtres .info {
+    font-size: 16px;
+  }
+
+  /******* SECTION 2 GAUCHE ***********/
+  .vignette_section2_gauche {
+    width: 100%;
+    height: 196px;
+  }
+
+  .vignette_section2_gauche img {
+    min-width: 100%; 
+    max-height: 106px;
+  }
+  
+  /******* SECTION 2 DROITE *******/
+
+  .vignette_section2_droite img {
+    width: 115px;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+
+  /******** SECTION 3 *********/
+  .vignette_section3_col1_col3 {
+    width:  100%;
+    height: 186px;
+  }
+
+  .vignette_section3_col1_col3 img {
+    border: 1px solid blue;  /* Esquisse */
+    width:  100%;
+    height: 136px;
+    object-position: 0px 0px;
+  }
+
+  .vignette_section3_col2.row1, .vignette_section3_col2.row2, .vignette_section3_col4.row1, .vignette_section3_col4.row2 {
+    height: 186px;
+  }
+
+  .vignette_section3_col2.row1 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
+    height: 136px;
+  }
+
+  .vignette_section3_col2.row2 img {
+    height: 136px;
+    object-position: 0px -5px;
+  }
+
+  .logo_reservia {
+    margin-left: 2%;
+  }
+
 }
