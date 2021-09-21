@@ -97,8 +97,6 @@ input[type=text] {
   opacity: 1; /* Firefox */
 }
 
-
-
 .bouton_rechercher {
   width: 150px;
   padding: 16px;
@@ -666,7 +664,6 @@ footer {
   }
   
 
-
 /*************** SECTION 3 (Activités) *******************/
   .conteneur_vignettes_section3 {
     flex-direction: column;
@@ -846,7 +843,7 @@ footer {
     height: 200px;
   }
   
-
+}
 
 
 
@@ -1006,7 +1003,6 @@ footer {
     margin-left: 5%;
   }
   
-
 
 /*********** SECTION 2 DROITE (Les plus populaires) ************/
   .section2_droite {
@@ -1193,8 +1189,6 @@ footer {
     font-size: 16px;
   }
 }
-
-
 
 
 
@@ -1625,5 +1619,5 @@ footer {
   #Activites {
     font-size: 20px;
   }
-
+  
 }
