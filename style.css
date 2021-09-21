@@ -475,10 +475,14 @@ footer {
 /***** Ajoute une marge à droite et à gauche **********/
 
 @media screen and (max-width : 1520px) {
-	body {
+	main {
   margin-left: 20px;
   margin-right: 20px;
 	}
+  
+  .footer {
+    margin-left: 20px;
+  }
 }
 
 
@@ -614,12 +618,6 @@ footer {
 
 /******** VIEWPORT <= 1080PX (TABLETTES) *********/
 @media screen and (max-width : 1080px) {
-/***** Enlève la marge à gauche et à droite ********/
-  body {
-  margin-left: 0px;
-  margin-right: 0px;
-	}
-  
 /*********** SECTION 2 GAUCHE (Hébergement à Marseille) ***************/
   .section2_gauche {
     width: 100%;
@@ -632,11 +630,11 @@ footer {
   }
   
   #Populaires {
-    margin-left: 0px;
+    margin-left: 10px;
   }
 
   .conteneur_vignettes_section2_droite {
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: space-between;
     width: 100%;
     height: 160px;
@@ -850,10 +848,18 @@ footer {
 /************ VIEWPORT <= 800PX ************************/
 /*********** Kindle Fire HDX Linux *************/
 @media screen and (max-width : 800px) {
+/**** Enlève la marge à gauche et à droite *****/
+  main {
+  margin-left: 0px;
+  margin-right: 0px;
+	}
+  
 /********** FOOTER ********************/  
   .footer {
     gap: 14%;
+    margin-left: 0px;
   }
+ 
 }
 
 
@@ -862,10 +868,6 @@ footer {
 /************ VIEWPORT <= 768PX (TABLETTES/SMARTPHONES) ************/
 @media screen and (max-width : 768px) {
 /*************** HEADER *******************/
-  main {
-    margin-left: 0px;
-  }
-
   header {
     display: flex;
     flex-wrap: wrap;
