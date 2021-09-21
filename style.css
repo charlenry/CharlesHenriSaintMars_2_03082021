@@ -4,44 +4,42 @@
 }
 
 body {
-  border: 1px solid #F2F2F2;  /* Esquisse */
+  /* border: 1px solid #F2F2F2;   Esquisse */
   max-width : 1440px;
   margin: auto;
-
 }
 
 img {
   object-fit: cover;
 }
 
-main {
-  /* margin: 0 50px; */
-  border: solid red 1px;  /* Esquisse */
-}
+/* main {
+  border: solid gray 1px;
+} */
 
 
 /************* HEADER ***************/
 header {
-  border: solid red 3px;  /* Esquisse */
+  /*border: solid red 3px;   Esquisse */
   display: flex;
   height: 120px;
 }
 
 .logo_reservia {
-  border: solid blue 1px;   /* Esquisse */
+ /* border: solid blue 1px;    Esquisse */
   width: 110px;
   height: 45px;
 }
 
 .logo {
-  border: solid green 1px;   /* Esquisse */
+ /* border: solid green 1px;    Esquisse */
   display: flex;
   align-items: center;
   width: 100%;
 }
 
 nav {
-  border: solid cyan 1px;  /* Esquisse */
+ /* border: solid cyan 1px;   Esquisse */
   display: flex;
   align-items: center;
 }
@@ -66,7 +64,7 @@ nav {
 }
 
 .inscription {
-  border: 1px solid mediumslateblue;  /* Esquisse */
+ /* border: 1px solid mediumslateblue;   Esquisse */
   display: flex;
   align-items: center;
  }
@@ -77,7 +75,7 @@ nav {
  }
 
 
- /******************* SECTION 1 ******************/
+ /******************* SECTION 1 (Zone de sélection) ******************/
  .section1 p {
    font-size: 20px;
  }
@@ -240,7 +238,7 @@ input[type=text] {
 
 
 
-/*************** SECTION 2 *******************/
+/*************** SECTION 2 (Zone Hébergement) ***************/
 .section2 {
   display: flex;
   flex-direction: row;
@@ -248,13 +246,12 @@ input[type=text] {
   justify-content: space-between;
   align-content: space-between;
   margin-bottom: 25px;
-  /*width: 100%;*/ 
 }
 
 
-/*************** SECTION 2 GAUCHE *******************/
+/*********** SECTION 2 GAUCHE (Hébergement à Marseille) **************/
 .section2_gauche {
-  border: 1px solid red;  /* Esquisse */
+ /* border: 1px solid red;   Esquisse */
   border-radius: 16px;
   width: 900px;
   height: 630px;
@@ -263,19 +260,19 @@ input[type=text] {
 }
 
 .conteneur_vignettes_section2_gauche {
+  /* border: 1px solid green;   Esquisse */
 	display: flex;
 	flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-content: space-between;
-  border: 1px solid green;  /* Esquisse */
   width: 100%;
   height: 500px;
 }
 
 .vignette_section2_gauche {
+  /* border: 1px solid blue;   Esquisse */
   padding: 5px;
-  border: 1px solid blue;  /* Esquisse */
   border-radius: 16px;
   width:  280px;
   height: 215px;
@@ -295,9 +292,9 @@ input[type=text] {
 }
 
 
-/*************** SECTION 2 DROITE *******************/
+/************** SECTION 2 DROITE (Les plus populaires) **************/
 .section2_droite {
-  border: 1px solid red;   /* Esquisse */
+ /* border: 1px solid red;    Esquisse */
   border-radius: 16px;
   width: 374px;
   height: 630px;
@@ -305,6 +302,7 @@ input[type=text] {
 }
 
 .conteneur_vignettes_section2_droite {
+  /* border: 1px solid green;   Esquisse */
   display: flex;
 	flex-wrap: wrap;
   flex-direction: row;
@@ -312,11 +310,10 @@ input[type=text] {
   align-content: space-between;
   width: 100%;
   height: 500px;
-  border: 1px solid green;  /* Esquisse */
 }
 
 .vignette_section2_droite {
-  border: 1px solid blue;   /* Esquisse */
+ /* border: 1px solid blue;    Esquisse */
   border-radius: 16px;
   width:  350px;
   height: 158px;
@@ -353,22 +350,22 @@ input[type=text] {
 }
 
 
-/*************** SECTION 3 *******************/
+/*************** SECTION 3 (Activités) *******************/
 .section3 {
-  border: 1px solid green;  /* Esquisse */
+ /* border: 1px solid green;   Esquisse */
   clear: both;
   margin-bottom: 20px;
   width: 100%;
 }
 
 .conteneur_vignettes_section3 {
+  /* border: 1px solid indianred;    Esquisse */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   height: 514px;
   width: 100%;
   justify-content: space-between;
-  border: 1px solid indianred;   /* Esquisse */
 }
 
 .vignette_section3_col1_col3 {
@@ -379,11 +376,12 @@ input[type=text] {
 }
 
 .vignette_section3_col1_col3 img {
+  /* border: 1px solid blue;   Esquisse */
   width:  305px;
   height: 440px;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
-  border: 1px solid blue;  /* Esquisse */
+
 }
 
 .conteneur_vignettes_section3_col2, .conteneur_vignettes_section3_col4 {
@@ -401,10 +399,10 @@ input[type=text] {
 }
 
 .vignette_section3_col2 img, .vignette_section3_col4 img {
+  /* border: 1px solid blue;    Esquisse */
   width:  305px;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
-  border: 1px solid blue;   /* Esquisse */
 }
 
 /****** Colonne 2 **********/
@@ -459,9 +457,9 @@ footer {
 }
 
 footer div {
-  border: 1px solid blue;   /* Esquisse */
+ /* border: 1px solid blue;    Esquisse */
   margin-bottom: 15px;
-  width: 350px;
+  max-width: 350px;
 
 }
 
@@ -469,9 +467,10 @@ footer div {
 /*+++++++++++++++ ZONE RESPONSIVE ++++++++++++++++++++*/
 
 /*************** VIEWPORT <= 1300PX *******************/
+/********** Vue Desktop *********/
 
 @media screen and (max-width : 1300px) {
-/* SECTION 2 GAUCHE */
+/*** SECTION 2 GAUCHE (Hébergement à Marseille) ***/
   .section2_gauche {
     width: 70%;
     margin-bottom: 10px;
@@ -499,12 +498,11 @@ footer div {
   }
 
 
-  /* SECTION 2 DROITE */
+  /*** SECTION 2 DROITE (Les plus populaires) ***/
   .section2_droite {
     width: 28%;
     height: 630px;
   }
-
 
   .vignette_section2_droite {
     width: 350px;
@@ -525,7 +523,7 @@ footer div {
     margin-right: 80px;
   }
 
-/*************** SECTION 3 **************/
+/*************** SECTION 3 (Activités) **************/
   .vignette_section3_col1_col3 {
     width: 250px;
     height: 514px;
@@ -543,8 +541,6 @@ footer div {
 
   .vignette_section3_col2 img, .vignette_section3_col4 img {
     width: 100%;
-    /* height: 170px; */
-
   }
 
   .vignette_section3_caption {
@@ -560,18 +556,14 @@ footer div {
 
 
 /******** VIEWPORT <= 1080PX (TABLETTES) *********/
-
 @media screen and (max-width : 1080px) {
-/*************** SECTION 2 GAUCHE *******************/
+/*********** SECTION 2 GAUCHE (Hébergement à Marseille) ***************/
   .section2_gauche {
-    border: 1px solid red;  /* Esquisse */
     width: 100%;
   }
 
-
- /*************** SECTION 2 DROITE *******************/
+ /*************** SECTION 2 DROITE (Les plus populaires) ************/
   .section2_droite {
-    border: 1px solid red; /* Esquisse */
     width: 100%;
     height: 240px;
   }
@@ -581,11 +573,9 @@ footer div {
     align-content: space-between;
     width: 100%;
     height: 160px;
-    border: 1px solid green;  /* Esquisse */
   }
 
   .vignette_section2_droite {
-    border: 1px solid blue;  /* Esquisse */
     width:  32%;
   }
 
@@ -594,26 +584,22 @@ footer div {
 
 
 /*************** VIEWPORT <= 1024PX *******************/
+/*********** Adaptation à la cassure ******************/
 @media screen and (max-width : 1024px) {
-/********** SECTION 1 ************/
+/********** SECTION 1 (Zone de sélection) ************/
   .boutons_filtres {
     font-size: 20px;
   }
 
-/************ SECTION 2 DROITE **********/
+/************ SECTION 2 DROITE (Les plus populaires) **********/
   .section2_droite {
     height: 240px;
   }
   
 
 
-/*************** SECTION 3 *******************/
-  .section3 {
-    border: 1px solid green;  /* Esquisse */
-  }
-
+/*************** SECTION 3 (Activités) *******************/
   .conteneur_vignettes_section3 {
-    border: 1px solid indianred;  /* Esquisse */
     flex-direction: column;
     height: auto;
     width: 100%;
@@ -628,7 +614,6 @@ footer div {
   }
 
   .vignette_section3_col1_col3 img {
-    border: 1px solid blue;  /* Esquisse */
     width:  100%;
     height: 200px;
   }
@@ -650,7 +635,6 @@ footer div {
 
   .vignette_section3_col2 img, .vignette_section3_col4 img {
     width:  100%;
-    border: 1px solid blue;  /* Esquisse */
   }
 
   .vignette_section3_col2.row1 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
@@ -665,20 +649,21 @@ footer div {
  }
 
 
+
  /************* VIEWPORT <= 980PX ****************/
+ /*********** Adaptation à la cassure ******************/
 @media screen and (max-width : 980px) {
- /********** SECTION 1 ************/
+ /********** SECTION 1 (Zone de sélection) ************/
     .boutons_filtres {
       font-size: 19px;
     }
-
 
     .vignette_section2_droite img {
       width: 130px;
       height: 100%;
     }
 
-/********* SECTION 3 **********/
+/********* SECTION 3 (Activités) **********/
     .vignette_section3_col2.row2 img {
       height: 200px;
       object-position: 0px -15px;
@@ -688,16 +673,15 @@ footer div {
  
 
 /*************** VIEWPORT <= 880PX *******************/
+/*********** Adaptation à la cassure ******************/
 @media screen and (max-width : 880px) {
- /*************** SECTION 2 GAUCHE *******************/
+ /*************** SECTION 2 GAUCHE (Hébergement à Marseille) ****************/
   .section2_gauche {
-    border: 1px solid red;  /* Esquisse */
     width: 100%;
     height: 630px;
    }
 
   .conteneur_vignettes_section2_gauche {
-    border: 1px solid green;  /* Esquisse */
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
@@ -706,7 +690,6 @@ footer div {
   }
 
   .vignette_section2_gauche {
-    border: 1px solid blue;  /* Esquisse */
     width:  245px;
     height: 215px;
   }
@@ -720,11 +703,8 @@ footer div {
     line-height: 0.2;
   }
 
-
- /*************** SECTION 2 DROITE *******************/
-
+ /*************** SECTION 2 DROITE (Les plus populaires) ***************/
   .section2_droite {
-    border: 1px solid red;  /* Esquisse */
     width: 100%;
     height: auto;
   }
@@ -735,11 +715,9 @@ footer div {
     align-content: space-between;
     width: 100%;
     height: 500px;
-    border: 1px solid green; /* Esquisse */
   }
 
   .vignette_section2_droite {
-    border: 1px solid blue;  /* Esquisse */
     width:  100%;
     height: 158px;
   }
@@ -757,14 +735,8 @@ footer div {
   }
 
 
-/*************** SECTION 3 *******************/
-
-  .section3 {
-    border: 1px solid green;  /* Esquisse */
-  }
-
+/*************** SECTION 3 (Activités) *******************/
   .conteneur_vignettes_section3 {
-    border: 1px solid indianred;  /* Esquisse */
     flex-direction: column;
     height: auto;
     width: 100%;
@@ -779,7 +751,6 @@ footer div {
   }
 
   .vignette_section3_col1_col3 img {
-    border: 1px solid blue;  /* Esquisse */
     width:  100%;
     height: 200px;
   }
@@ -798,10 +769,8 @@ footer div {
     height: 250px;
   }
 
-
   .vignette_section3_col2 img, .vignette_section3_col4 img {
     width:  100%;
-    border: 1px solid blue;  /* Esquisse */
   }
 
   .vignette_section3_col2.row1 img, .vignette_section3_col2.row2 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
@@ -812,11 +781,20 @@ footer div {
 
 
 
+/************ VIEWPORT <= 800PX ************************/
+/*********** Kindle Fire HDX Linux *************/
+@media screen and (max-width : 800px) {
+/********** SECTION 3 (Activités) ********************/
+	.footer_indentation p {
+    font-size: 15px;
+  }
+}
 
-/************ VIEWPORT <= 768PX (SMARTPHONES) ************/
 
+
+
+/************ VIEWPORT <= 768PX (TABLETTES/SMARTPHONES) ************/
 @media screen and (max-width : 768px) {
-
 /*************** HEADER *******************/
   main {
     margin-left: 0px;
@@ -865,6 +843,10 @@ footer div {
   footer div{
     width: 100%
   }
+  
+  .footer_indentation {
+    margin-left: 5%;
+  }
 
 /*********** FORMULAIRE RECHERCHER ****************/
   .bouton_rechercher {
@@ -889,19 +871,19 @@ footer div {
   } */
 
 /*************** SECTION FILTRES *******************/
-.filtres {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+	.filtres {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+	}
 
-.filtres h2 {
-  margin-top: 40px;
-  margin-bottom: 2px;
-}
+	.filtres h2 {
+  	margin-top: 40px;
+ 	 margin-bottom: 2px;
+	}
 
 
-/*************** SECTION 2 *******************/
+/*************** SECTION 2 (Zone Hébergement) ***************/
   .section2 {
     display: flex;
     flex-direction: column-reverse;
@@ -912,13 +894,12 @@ footer div {
   }
 
 
- /*************** SECTION 2 GAUCHE *******************/
+ /*********** SECTION 2 GAUCHE (Hébergement à Marseille) ***********/
   .section2_gauche {
-    border: 1px solid red;  /* Esquisse */
-    border-radius: 16px;
+    border-radius: 0px;
     width: 100%;
     height: auto;
-    background-color: #F2F2F2;
+    background-color: white;
 
   }
 
@@ -926,20 +907,19 @@ footer div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid green;  /* Esquisse */
     width: 100%;
     height: auto;
-
   }
 
   .vignette_section2_gauche {
-    border: 1px solid blue;  /* Esquisse */
-    flex-grow: 1;
+    flex-grow: 0;
     margin-bottom: 8px;
     padding: 5px;
-    width: 100%;
+    width: 90%;
     height: 358px;
     background-color: white;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .vignette_section2_gauche img {
@@ -953,32 +933,35 @@ footer div {
     line-height: 0.2;
     font-size: 15px;
   }
+  
+  #Hebergements, .AfficherPlus {
+    margin-left: 5%;
+  }
+  
 
 
-/*************** SECTION 2 DROITE *******************/
+/*********** SECTION 2 DROITE (Les plus populaires) ************/
   .section2_droite {
-    border: 1px solid red;  /* Esquisse */
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    border-radius: 0px;
   }
 
   .conteneur_vignettes_section2_droite {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* margin-left: auto;
-    margin-right: auto; */
+    align-content: center;
     width: 100%;
     height: auto;
-    border: 1px solid green;  /* Esquisse */
+   
   }
 
   .vignette_section2_droite {
     margin-bottom: 8px;
     padding: 5px;
-    border: 1px solid blue;  /* Esquisse */
-    width:  100%;
+    width:  90%;
     height: 158px;
     background-color: white;
   }
@@ -993,11 +976,14 @@ footer div {
     line-height: 1;
     font-size: 18px;
   }
+  
+  #Populaires {
+    margin-left: 5%;
+  }
 
 
- /*************** SECTION 3 *******************/
+ /*************** SECTION 3 (Activités) **************/
   .section3 {
-    border: 1px solid green;  /* Esquisse */
     margin-bottom: 30px;
     width: 100%;
     height: auto;
@@ -1009,16 +995,16 @@ footer div {
     flex-direction: column;
     height: auto;
     width: 100%;
-    border: 1px solid indianred;  /* Esquisse */
   }
 
   .vignette_section3_col1_col3 {
-    width:  100%;
+    width:  90%;
     height: 380px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .vignette_section3_col1_col3 img {
-    border: 1px solid blue;  /* Esquisse */
     width:  100%;
     height: 330px;
   }
@@ -1026,12 +1012,14 @@ footer div {
   .conteneur_vignettes_section3_col2, .conteneur_vignettes_section3_col2 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .vignette_section3_col2, .vignette_section3_col4 {
-    flex-grow: 1;
-    width: 100%;
+    flex-grow: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .vignette_section3_col2.row1, .vignette_section3_col2.row2, .vignette_section3_col4.row1, .vignette_section3_col4.row2 {
@@ -1040,7 +1028,6 @@ footer div {
 
   .vignette_section3_col2 img, .vignette_section3_col4 img {
     width:  100%;
-    border: 1px solid blue;  /* Esquisse */
   }
 
   .vignette_section3_col2.row1 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
@@ -1056,27 +1043,30 @@ footer div {
     text-indent: 15px;
     font-weight : bold;
   }
+  
+  #Activites {
+    margin-left: 5%;
+  }
 
 }
 
 
 /*************** VIEWPORT <= 580PX *******************/
 @media screen and (max-width : 580px) {
-/******** SECTION 2 DROITE *******/
+/****** SECTION 2 DROITE (Les plus populaires) *******/
 .vignette_section2_droite img {
   width: 210px;
   margin-right: 10px;
 }
 
 
-/********* SECTION 3 ********/
+/********* SECTION 3 (Activités) ********/
   .vignette_section3_col1_col3 {
-    width:  100%;
+    width:  90%;
     height: 300px;
   }
 
   .vignette_section3_col1_col3 img {
-    border: 1px solid blue;  /* Esquisse */
     width:  100%;
     height: 250px;
   }
@@ -1098,6 +1088,7 @@ footer div {
 
 /*************** VIEWPORT <= 575PX *******************/
 @media screen and (max-width : 575px) {
+/*** Zone info ***/
   .info {
     display: flex;
     align-items: center;
@@ -1109,6 +1100,8 @@ footer div {
     margin-bottom: 27px;
   }
 
+/*** SECTION 3 (Activités) ***/
+/*** Colonne 2, vignette 2 ***/
   .vignette_section3_col2.row2 img {
     height: 250px;
     object-position: 0px 0px;
@@ -1117,10 +1110,11 @@ footer div {
 
 
 /************* VIEWPORT <= 500PX *****************/
+/********* Plus petite taille sur Desktop *****/
 @media screen and (max-width : 500px) {
-/******* SECTION 2 GAUCHE ***********/
+/******* SECTION 2 GAUCHE (Hébergement à Marseille) ***********/
   .vignette_section2_gauche {
-    width: 100%;
+    width: 90%;
     height: 266px;
   }
 
@@ -1129,8 +1123,7 @@ footer div {
     max-height: 176px;
   }
  
-/******** SECTION 2 DROITE *******/
-
+/******** SECTION 2 DROITE (Les plus populaires) *******/
   .vignette_section2_droite img {
     width: 200px;
     height: 100%;
@@ -1138,14 +1131,13 @@ footer div {
   }
 
 
-/********* SECTION 3 *********/
+/********* SECTION 3 (Activités) *********/
   .vignette_section3_col1_col3 {
-    width:  100%;
+    width:  90%;
     height: 250px;
   }
 
   .vignette_section3_col1_col3 img {
-    border: 1px solid blue;  /* Esquisse */
     width:  100%;
     height: 200px;
   }
@@ -1158,6 +1150,7 @@ footer div {
     height: 200px;
   }
 
+  /*** Colonne 2, vignette 2 ***/
   .vignette_section3_col2.row2 img {
     height: 200px;
     object-position: 0px -10px;
@@ -1172,8 +1165,9 @@ footer div {
 
 
 /*************** VIEWPORT <= 425PX *****************/
+/************** Mobile L *********************/
 @media screen and (max-width : 425px) {
-  /******** SECTION 1 *************/
+  /******** SECTION 1 (Zone de sélection) *************/
   .section1 h1 {
     font-size: 30px;
   }
@@ -1186,7 +1180,7 @@ footer div {
     font-size: 20px;
   }
 
-  /******* SECTION 2 GAUCHE ***********/
+  /******* SECTION 2 GAUCHE (Hébergement à Marseille) ***********/
   .vignette_section2_gauche {
     width: 100%;
     height: 240px;
@@ -1197,8 +1191,7 @@ footer div {
     max-height: 150px;
   }
   
-  /******* SECTION 2 DROITE *******/
-
+  /******* SECTION 2 DROITE (Les plus populaires) *******/
   .vignette_section2_droite img {
     width: 170px;
     height: 100%;
@@ -1206,27 +1199,27 @@ footer div {
   }
 
 
-  /******** SECTION 3 *********/
+  /******** SECTION 3 (Activités) *********/
   .vignette_section3_col1_col3 {
     width:  100%;
     height: 250px;
   }
 
   .vignette_section3_col1_col3 img {
-    border: 1px solid blue;  /* Esquisse */
     width:  100%;
     height: 200px;
     object-position: 0px 0px;
   }
 
-  .vignette_section3_col2.row1, vignette_section3_col2.row2, vignette_section3_col4.row1, vignette_section3_col4.row2 {
+  .vignette_section3_col2.row1, .vignette_section3_col2.row2, .vignette_section3_col4.row1, .vignette_section3_col4.row2 {
     height: 250px;
   }
 
-  .vignette_section3_col2.row1 img, vignette_section3_col4.row1 img, vignette_section3_col4.row2 img {
+  .vignette_section3_col2.row1 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
     height: 200px;
   }
 
+  /*** Colonne 2, vignette 2 ***/
   .vignette_section3_col2.row2 img {
     height: 200px;
     object-position: 0px 10px;
@@ -1239,9 +1232,80 @@ footer div {
 }
 
 
+
+/*************** VIEWPORT <= 414PX *****************/
+/***** iPhone 6/7/8 Plus iOS 11 *******************/
+@media screen and (max-width : 414px) {
+  /******** SECTION 1 (Zone de sélection) *************/
+  .section1 h1 {
+    font-size: 30px;
+  }
+
+  .section1 p {
+    font-size: 22px;
+  }
+
+  .conteneur_filtres .info {
+    font-size: 20px;
+  }
+
+  /******* SECTION 2 GAUCHE (Hébergement à Marseille) ***********/
+  .vignette_section2_gauche {
+    width: 90%;
+    height: 240px;
+  }
+
+  .vignette_section2_gauche img {
+    min-width: 100%; 
+    max-height: 150px;
+  }
+  
+  /******* SECTION 2 DROITE (Les plus populaires) *******/
+  .vignette_section2_droite img {
+    width: 170px;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+
+  /******** SECTION 3 (Activités) *********/
+  .vignette_section3_col1_col3 {
+    width:  90%;
+    height: 250px;
+  }
+
+  .vignette_section3_col1_col3 img {
+    width:  100%;
+    height: 200px;
+    object-position: 0px 0px;
+  }
+
+  .vignette_section3_col2.row1, .vignette_section3_col2.row2, .vignette_section3_col4.row1, .vignette_section3_col4.row2 {
+    height: 250px;
+  }
+
+  .vignette_section3_col2.row1 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
+    height: 200px;
+  }
+
+  /*** Colonne 2, vignette 2 ***/
+  .vignette_section3_col2.row2 img {
+    height: 200px;
+    object-position: 0px 0px;
+  }
+
+  .logo_reservia {
+    margin-left: 16%;
+  }
+
+}
+
+
+
   /*************** VIEWPORT <= 375PX *****************/
+  /************* iPhone 6/7/8 iOS 11  ***************/
 @media screen and (max-width : 375px) {
-  /******** SECTION 1 *************/
+  /******** SECTION 1 (Zone de sélection) *************/
   .section1 h1 {
     font-size: 26px;
   }
@@ -1266,9 +1330,9 @@ footer div {
     font-size: 16px;
   }
 
-  /******* SECTION 2 GAUCHE ***********/
+  /******* SECTION 2 GAUCHE (Hébergement  à Marseille) ***********/
   .vignette_section2_gauche {
-    width: 100%;
+    width: 90%;
     height: 222px;
   }
 
@@ -1277,8 +1341,7 @@ footer div {
     max-height: 132px;
   }
   
-  /******* SECTION 2 DROITE *******/
-
+  /******* SECTION 2 DROITE (Les plus populaires) *******/
   .vignette_section2_droite img {
     width: 150px;
     height: 100%;
@@ -1286,27 +1349,27 @@ footer div {
   }
 
 
-  /******** SECTION 3 *********/
+  /******** SECTION 3 (Activités) *********/
   .vignette_section3_col1_col3 {
-    width:  100%;
+    width:  90%;
     height: 214px;
   }
 
   .vignette_section3_col1_col3 img {
-    border: 1px solid blue;  /* Esquisse */
     width:  100%;
     height: 164px;
     object-position: 0px 0px;
   }
 
-  .vignette_section3_col2.row1, vignette_section3_col2.row2, vignette_section3_col4.row1, vignette_section3_col4.row2 {
+  .vignette_section3_col2.row1, .vignette_section3_col2.row2, .vignette_section3_col4.row1, .vignette_section3_col4.row2 {
     height: 214px;
   }
 
-  .vignette_section3_col2.row1 img, vignette_section3_col4.row1 img, vignette_section3_col4.row2 img {
+  .vignette_section3_col2.row1 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
     height: 164px;
   }
 
+  /*** Colonne 2, vignette 2 ***/
   .vignette_section3_col2.row2 img {
     height: 164px;
     object-position: 0px 0px;
@@ -1319,9 +1382,112 @@ footer div {
 }
 
 
+
+  /*************** VIEWPORT <= 360PX *****************/
+  /*********** Galaxy Note 3 / Moto G4 ***************/
+@media screen and (max-width : 360px) {
+  /******** SECTION 1 (Zone de sélection) *************/
+  .section1 h1 {
+    font-size: 26px;
+  }
+
+  .section1 p {
+    font-size: 20px;
+  }
+
+  input[type=text] {
+    width: 250px;
+  }
+
+  .boutons_filtres {
+    font-size: 16px;
+  }
+
+  .info_icon_circle {
+    margin-bottom: 20px;
+  }
+
+  .conteneur_filtres .info {
+    font-size: 16px;
+  }
+
+  /******* SECTION 2 GAUCHE (Hébergement  à Marseille) ***********/
+  .vignette_section2_gauche {
+    width: 90%;
+    height: 222px;
+  }
+
+  .vignette_section2_gauche img {
+    min-width: 100%; 
+    max-height: 132px;
+  }
+  
+  #Hebergements {
+    font-size: 20px;
+  }
+  
+  .AfficherPlus {
+    font-size: 16px;
+  }
+  
+  /******* SECTION 2 DROITE (Les plus populaires) *******/
+  .vignette_section2_droite img {
+    width: 150px;
+    height: 100%;
+    margin-right: 10px;
+  }
+  
+  .vignette_section2_droite p {
+    font-size: 16px;
+    line-height: 0.8;
+  }
+  
+  #Populaires {
+    font-size: 20px;
+  }
+
+
+  /******** SECTION 3 (Activités) *********/
+  .vignette_section3_col1_col3 {
+    width:  90%;
+    height: 214px;
+  }
+
+  .vignette_section3_col1_col3 img {
+    width:  100%;
+    height: 164px;
+    object-position: 0px 0px;
+  }
+
+  .vignette_section3_col2.row1, .vignette_section3_col2.row2, .vignette_section3_col4.row1, .vignette_section3_col4.row2 {
+    height: 214px;
+  }
+
+  .vignette_section3_col2.row1 img, .vignette_section3_col4.row1 img, .vignette_section3_col4.row2 img {
+    height: 164px;
+  }
+
+  /*** Colonne 2, vignette 2 ***/
+  .vignette_section3_col2.row2 img {
+    height: 164px;
+    object-position: 0px 0px;
+  }
+
+  .logo_reservia {
+    margin-left: 10%;
+  }
+  
+  #Activites {
+    font-size: 20px;
+  }
+
+}
+
+
 /*************** VIEWPORT <= 320PX *****************/
+/************* SAMSUNG SM-J120 / iPhone 5 SE *****************/
 @media screen and (max-width : 320px) {
-  /******** SECTION 1 *************/
+/******** SECTION 1 (Zone de sélection) *************/
   .section1 h1 {
     font-size: 22px;
   }
@@ -1346,9 +1512,9 @@ footer div {
     font-size: 16px;
   }
 
-  /******* SECTION 2 GAUCHE ***********/
+  /******* SECTION 2 GAUCHE (Hébergement à Marseille) ***********/
   .vignette_section2_gauche {
-    width: 100%;
+    width: 90%;
     height: 196px;
   }
 
@@ -1357,23 +1523,37 @@ footer div {
     max-height: 106px;
   }
   
-  /******* SECTION 2 DROITE *******/
-
+  #Hebergements {
+    font-size: 20px;
+  }
+  
+  .AfficherPlus {
+    font-size: 16px;
+  }
+  
+  /******* SECTION 2 DROITE (Les plus populaires) *******/
   .vignette_section2_droite img {
-    width: 115px;
+    width: 110px;
     height: 100%;
     margin-right: 10px;
   }
+  
+  .vignette_section2_droite p {
+    font-size: 18px;
+    line-height: 0.8;
+  }
+  
+  #Populaires {
+    font-size: 20px;
+  }
 
-
-  /******** SECTION 3 *********/
+  /******** SECTION 3 (Activités) *********/
   .vignette_section3_col1_col3 {
-    width:  100%;
+    width:  90%;
     height: 186px;
   }
 
   .vignette_section3_col1_col3 img {
-    border: 1px solid blue;  /* Esquisse */
     width:  100%;
     height: 136px;
     object-position: 0px 0px;
@@ -1387,13 +1567,18 @@ footer div {
     height: 136px;
   }
 
+  /*** Colonne 2, vignette 2 ***/
   .vignette_section3_col2.row2 img {
     height: 136px;
-    object-position: 0px -5px;
+    object-position: 0px 0px;
   }
 
   .logo_reservia {
     margin-left: 2%;
+  }
+  
+  #Activites {
+    font-size: 20px;
   }
 
 }
