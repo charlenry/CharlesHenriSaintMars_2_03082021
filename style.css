@@ -227,15 +227,18 @@ input[type=text] {
   color:#F2F2F2;
 }
 
-.decoration_lien {
+
+/* Configuration des liens-vignettes */
+.vignette_section2_gauche, .vignette_section2_droite, .vignette_section3_col1_col3, .vignette_section3_col2, .vignette_section3_col4 {
+  display:block;
   text-decoration: none;
 }
 
-.decoration_lien:visited {
+.vignette_section2_gauche:visited, .vignette_section2_droite:visited, .vignette_section3_col1_col3:visited, .vignette_section3_col2:visited, .vignette_section3_col4:visited {
   color: black;
 }
 
-.decoration_lien:hover {
+.vignette_section2_gauche:hover, .vignette_section2_droite:hover, .vignette_section3_col1_col3:hover, .vignette_section3_col2:hover, .vignette_section3_col4:hover {
   color: #0065FC;
 }
 
