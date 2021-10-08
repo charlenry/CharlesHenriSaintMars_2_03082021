@@ -68,7 +68,7 @@ nav {
   text-decoration: none;
 }
 
-.navbar:hover {
+nav .navbar:hover {
   border-top: 2px solid #0065FC;
   position: relative;
   bottom: 1px;
@@ -101,7 +101,13 @@ input[type=text] {
   font-size: 18px;
   font-weight : bold;
   border: 1px solid #F2F2F2;
+  outline: none;
 }
+
+input:focus {
+  border: 1px solid #0065FC;
+}
+
 
 ::placeholder {
   color: black;
@@ -142,6 +148,10 @@ input[type=text] {
 .filtres {
   display: flex;
   align-items: center;
+}
+
+.filtres > h2 {
+  font-size: 1em;
 }
 
 .filtres > h2, .filtres > form {
@@ -203,6 +213,7 @@ input[type=text] {
 
 .info_icon_circle .fa-info {
   color:#0065FC;
+  font-size: 16px;
 }
 
 .info_icon_circle {
@@ -261,7 +272,7 @@ input[type=text] {
 /*  border: 1px solid red; */
   border-radius: 16px;
   width: 960px;
-  height: 630px;
+  height: 660px;
   background-color: #F2F2F2;
 
 }
@@ -304,14 +315,18 @@ input[type=text] {
   margin-left: 30px;
 }
 
+.AfficherPlus {
+  margin-top: 22px;  /* Voir pour les autres formats */
+}
+
 
 /************** SECTION 2 DROITE (Les plus populaires) **************/
 .section2_droite {
   /* Esquisse */
- /* border: 1px solid red;*/
+/*  border: 1px solid red;*/
   border-radius: 16px;
   width: 440px;
-  height: 630px;
+  height: 660px;
   background-color: #F2F2F2;
 }
 
@@ -334,10 +349,11 @@ input[type=text] {
   padding-bottom: 5px;
   padding-left: 5px;
   border-radius: 16px;
-  width:  370px;
+  width:  365px;
   height: 158px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 40px;  /* Voir pour les autres formats */
 }
 
 .vignette_section2_droite img {
@@ -350,7 +366,11 @@ input[type=text] {
 }
 
 .vignette_section2_droite p {
-  line-height: 0.8;
+  line-height: 0.2;
+}
+
+.vignette_section2_droite p:last-child {
+  margin-top: 38px;  /* Voir pour les autres formats */
 }
 
 .titre_populaires {
@@ -521,7 +541,7 @@ footer {
 /*** SECTION 2 GAUCHE (Hébergement à Marseille) ***/
   .section2_gauche {
     width: 70%;
-    margin-bottom: 10px;
+/*    margin-bottom: 10px;*/
   }
 
   .conteneur_vignettes_section2_gauche {
@@ -553,27 +573,37 @@ footer {
   /*** SECTION 2 DROITE (Les plus populaires) ***/
   .section2_droite {
     width: 28%;
-    height: 630px;
+/*    height: 660px;*/
   }
 
   .vignette_section2_droite {
     width: 350px;
     height: 158px;
+    margin-bottom: 40px;  /* Voir pour les autres formats */
   }
 
   .vignette_section2_droite img {
     width: 150px;
     height: 100%;
   }
-
-  .vignette_section2_droite h3, .vignette_section2_droite p {
-    line-height: 1.2;
-    font-size: 14px;
-  }
-
+  
   .section2_droite > h2 {
     margin-right: 80px;
   }
+
+  .vignette_section2_droite h3 {
+    line-height: 1;
+    font-size: 18px;
+  }
+  
+  .vignette_section2_droite p {
+    line-height: 1;
+    font-size: 16px;
+  }
+
+  .vignette_section2_droite p:last-child {
+  margin-top: 34px;  /* Voir pour les autres formats */
+}
   
   #Populaires {
     margin-left: 20px;
@@ -620,20 +650,40 @@ footer {
 /****** SECTION 2 DROITE (Les populaires) *******/
   .vignette_section2_droite {
  /* border: 1px solid blue;    Esquisse */
-  border-radius: 16px;
-  width:  270px;
-  height: 148px;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    width:  280px;
+    height: 148px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 55px;  /* Voir pour les autres formats */
   }
 
   .vignette_section2_droite img {
     float: left;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
-    width: 110px;
+    width: 105px;
     height: 100%;
     margin-right: 10px;
+  }
+  
+    .section2_droite > h2 {
+    margin-right: 80px;
+  }
+
+  .vignette_section2_droite h3 {
+    line-height: 1;
+    font-size: 18px;
+    margin: 16px 0px;
+  }
+  
+  .vignette_section2_droite p {
+    line-height: 1;
+    font-size: 14px;
+  }
+  
+  .vignette_section2_droite p:last-child {
+  margin-top: 30px;  /* Voir pour les autres formats */
   }
   
   #Populaires {
@@ -698,6 +748,7 @@ footer {
   .section2_droite {
     width: 100%;
     height: 240px;
+    margin-top: 20px;  /* Voir pour les autres formats */
   }
   
   #Populaires {
@@ -712,7 +763,7 @@ footer {
   }
 
   .vignette_section2_droite {
-    width:  32%;
+    width:  30%;
   }
   
   /*************** SECTION 3 (Activités) **************/
@@ -803,9 +854,29 @@ footer {
     }
 
     .vignette_section2_droite img {
-      width: 130px;
+      width: 100px;
       height: 100%;
     }
+  
+/******* SECTION 2 DROITE ******/
+    .section2_droite > h2 {
+    margin-right: 80px;
+  }
+
+  .vignette_section2_droite h3 {
+    line-height: 1;
+    font-size: 16px;
+    margin: 16px 0px;
+  }
+  
+  .vignette_section2_droite p {
+    line-height: 1;
+    font-size: 12px;
+  }
+  
+  .vignette_section2_droite p:last-child {
+  margin-top: 36px;  /* Voir pour les autres formats */
+  }
 
 /********* SECTION 3 (Activités) **********/
     .vignette_section3_col2.row2 img {
@@ -814,7 +885,31 @@ footer {
     }
 
 }
- 
+
+
+/*************** VIEWPORT <= 900PX *******************/
+/*********** Adaptation à la cassure ******************/
+@media screen and (max-width : 900px) {
+  /******* SECTION 2 DROITE ******/
+    .section2_droite > h2 {
+    margin-right: 80px;
+  }
+
+  .vignette_section2_droite h3 {
+    line-height: 1;
+    font-size: 15px;
+    margin: 16px 0px;
+  }
+  
+  .vignette_section2_droite p {
+    line-height: 1;
+    font-size: 12px;
+  }
+  
+  .vignette_section2_droite p:last-child {
+  margin-top: 38px;  /* Voir pour les autres formats */
+  }
+}
 
 /*************** VIEWPORT <= 880PX *******************/
 /*********** Adaptation à la cassure ******************/
@@ -864,6 +959,7 @@ footer {
   .vignette_section2_droite {
     width:  100%;
     height: 158px;
+    margin-bottom: 0px;
   }
 
   .vignette_section2_droite img {
@@ -873,9 +969,18 @@ footer {
     margin-right: 14px;
   }
 
-  .vignette_section2_droite h3, .vignette_section2_droite p {
+  .vignette_section2_droite h3 {
     line-height: 1;
     font-size: 18px;
+  }
+  
+  .vignette_section2_droite p {
+    line-height: 1;
+    font-size: 18px;
+  }
+  
+  .vignette_section2_droite p:last-child {
+  margin-top: 44px;  /* Voir pour les autres formats */
   }
 
 
@@ -921,6 +1026,10 @@ footer {
     height: 200px;
   }
   
+  .decoration_lien {
+    font-size: 15px;
+  }
+  
 }
 
 
@@ -928,17 +1037,21 @@ footer {
 /************ VIEWPORT <= 800PX ************************/
 /*********** Kindle Fire HDX Linux *************/
 @media screen and (max-width : 800px) {
-/**** Enlève la marge à gauche et à droite *****/
-  main {
-  margin-left: 0px;
-  margin-right: 0px;
-	}
+  /**** SECTION 2 GAUCHE *****/ 
+  .vignette_section2_gauche {
+    width:  235px;
+    height: 215px;
+  }
+  
+  .decoration_lien {
+    font-size: 14px;
+  }
   
 /********** FOOTER ********************/  
-  .footer {
+  /*.footer {
     gap: 14%;
     margin-left: 0px;
-  }
+  }*/
  
 }
 
@@ -951,16 +1064,19 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
   }
+  
+/**** Enlève la marge à gauche et à droite *****/
+  main {
+  margin-left: 0px;
+  margin-right: 0px;
+	}
+  
 /*************** HEADER *******************/
   header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   	height: 120px;
-  }
-
-  header :nth-child(2) {
-    order: 1;
   }
 
 	.logo, .inscription {
@@ -977,14 +1093,20 @@ footer {
 	}
 
 	nav {
+    order: 1;
     justify-content: space-around;
 		width: 100%;
     height: 50px;
 	}
 
-  .navbar:hover {
+  nav .navbar:hover {
     border-top: none;
     border-bottom: 2px solid #0065FC;
+  }
+  
+  .section1 {
+    margin-left: 21px;
+    margin-right: 21px;
   }
 
 /*************** FOOTER *******************/
@@ -999,6 +1121,10 @@ footer {
   .footer_indentation {
     width: 94%;
     margin-left: 5%;
+  }
+  
+  .decoration_lien {
+    font-size: 16px;
   }
 
 /*********** FORMULAIRE RECHERCHER ****************/
@@ -1201,8 +1327,201 @@ footer {
 }
 
 
+/*************** VIEWPORT <= 736PX *******************/
+@media screen and (max-width : 736px) {
+  /***** HEADER ******/
+  a.navbar {
+    font-size: 18px;
+  }
+  
+  /******** SECTION 1 (Zone de sélection) *************/
+  .section1 h1 {
+    font-size: 46px;
+  }
+
+  .section1 p {
+    font-size: 30px;
+  }
+  
+  input[type=text] {
+    width: 500px;
+  }
+  
+  .conteneur_filtres h2{
+    font-size: 22px;
+  }
+  
+  .boutons_filtres {
+    font-size: 28px;
+    margin-right: 100px;
+    max-width: 350px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .icons {
+    margin-left: -26px;
+    margin-right: 5px;
+  }
+    
+  .info_icon_circle {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 38px;
+  }
+  
+  .info_icon_circle .fa-info {
+  font-size: 20px;
+}
+
+  .conteneur_filtres .info {
+    font-size: 33px;
+  }
+}
+
+
+/*************** VIEWPORT <= 667PX *******************/
+@media screen and (max-width : 667px) {
+  /****** SECTION 1 ******/
+  .section1 h1 {
+    font-size: 42px;
+  }
+  
+  .section1 p {
+    font-size: 28px;
+  }
+  
+  input[type=text] {
+    width: 450px;
+  }
+  
+  .conteneur_filtres h2{
+    font-size: 22px;
+  }
+  
+  .boutons_filtres {
+    font-size: 28px;
+    margin-right: 80px;
+    max-width: 350px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .conteneur_filtres .info {
+    font-size: 30px;
+  }
+}
+
+
+/*************** VIEWPORT <= 651PX *******************/
+@media screen and (max-width : 651px) {
+  .vignette_section2_droite:nth-child(2) p:last-child {
+    margin-top: 28px;
+  }
+}
+
+
+/*************** VIEWPORT <= 640PX *******************/
+@media screen and (max-width : 640px) {
+  /****** SECTION 1 ******/
+  .section1 h1 {
+    font-size: 40px;
+  }
+  
+  .section1 p {
+    font-size: 28px;
+  }
+  
+  input[type=text] {
+    width: 450px;
+  }
+  
+  .conteneur_filtres h2{
+    font-size: 22px;
+  }
+  
+  .boutons_filtres {
+    font-size: 28px;
+    margin-right: 60px;
+    max-width: 350px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .conteneur_filtres .info {
+    font-size: 28px;
+  }
+}
+
+
+
+/*************** VIEWPORT <= 600PX *******************/
+@media screen and (max-width : 600px) {
+  /****** SECTION 1 ******/
+  .section1 h1 {
+    font-size: 38px;
+  }
+  
+  .section1 p {
+    font-size: 26px;
+  }
+  
+  input[type=text] {
+    width: 425px;
+  }
+  
+  .conteneur_filtres h2{
+    font-size: 22px;
+  }
+  
+  .boutons_filtres {
+    font-size: 28px;
+    margin-right: 40px;
+    max-width: 350px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .conteneur_filtres .info {
+    font-size: 26px;
+  }
+  
+}
+
+
+
 /*************** VIEWPORT <= 580PX *******************/
 @media screen and (max-width : 580px) {
+  /******** SECTION 1 (Zone de sélection) *************/
+  .section1 h1 {
+    font-size: 36px;
+  }
+  
+  .section1 p {
+    font-size: 24px;
+  }
+  
+  input[type=text] {
+    width: 370px;
+  }
+  
+  .conteneur_filtres h2{
+    font-size: 22px;
+  }
+  
+  .boutons_filtres {
+    font-size: 26px;
+    margin-right: 40px;
+    max-width: 350px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .conteneur_filtres .info {
+    font-size: 24px;
+  }
+  
 /****** SECTION 2 DROITE (Les plus populaires) *******/
 .vignette_section2_droite img {
   width: 210px;
@@ -1240,15 +1559,35 @@ footer {
 @media screen and (max-width : 575px) {
    /******** SECTION 1 (Zone de sélection) *************/
   .section1 h1 {
-    font-size: 40px;
+    font-size: 34px;
   }
-
+  
   .section1 p {
-    font-size: 26px;
+    font-size: 24px;
+  }
+  
+  input[type=text] {
+    width: 370px;
+  }
+  
+  .conteneur_filtres h2{
+    font-size: 22px;
+  }
+  
+  .boutons_filtres {
+    font-size: 24px;
+    margin-right: 30px;
+    max-width: 350px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .conteneur_filtres .info {
+    font-size: 24px;
   }
   
 /*** Zone info ***/
-  .info {
+  .conteneur_filtres .info {
     display: flex;
     align-items: center;
     align-items: center;
@@ -1267,51 +1606,120 @@ footer {
   }
 }
 
-
-
-/*************** VIEWPORT <= 460PX *****************/
-/************** Mobile L *********************/
-@media screen and (max-width : 460px) {
+/*************** VIEWPORT <= 568PX *******************/
+@media screen and (max-width : 568px) {
   /******** SECTION 1 (Zone de sélection) *************/
   .section1 h1 {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .section1 p {
+    font-size: 24px;
+  }
+  
+  input[type=text] {
+    width: 370px;
+  }
+  
+  .boutons_filtres {
+    font-size: 26px;
+    margin-right: 22px;
+    max-width: 320px;
+  }
+  
+  .info_icon_circle {
+    margin-bottom: 30px;
+  }
+
+  .conteneur_filtres .info {
+    font-size: 24px;
+  }
+}
+
+
+/*************** VIEWPORT <= 533PX *******************/
+@media screen and (max-width : 533px) {
+  /******** SECTION 1 (Zone de sélection) *************/
+  .section1 h1 {
+    font-size: 34px;
+  }
+
+  .section1 p {
+    font-size: 24px;
+  }
+  
+  input[type=text] {
+    width: 370px;
+  }
+  
+  .boutons_filtres {
+    font-size: 26px;
+    margin-right: 22px;
+    max-width: 320px;
+  }
+  
+  .info_icon_circle {
+    margin-bottom: 30px;
+  }
+
+  .conteneur_filtres .info {
     font-size: 22px;
-  }
-  
- /****** SECTION 2 DROITE (Les plus populaires) **********/
-  .vignette_section2_droite img {
-	width: 140px;
-  }
-  
-  .vignette_section2_droite h3 {
-    font-size: 21px;
-  }
-  
-  .vignette_section2_droite p {
-    font-size: 16px;
   }
 }
 
 
 
+/*************** VIEWPORT <= 530PX *******************/
+@media screen and (max-width : 530px) {
+  /******** SECTION 1 (Zone de sélection) *************/
+  .section1 h1 {
+    font-size: 34px;
+  }
+
+  .section1 p {
+    font-size: 23px;
+  }
+  
+  input[type=text] {
+    width: 340px;
+  }
+}
 
 /*************** VIEWPORT <= 425PX *****************/
 /************** Mobile L *********************/
 @media screen and (max-width : 425px) {
   /******** SECTION 1 (Zone de sélection) *************/
   .section1 h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .section1 p {
-    font-size: 22px;
+    font-size: 18px;
+  }
+  
+  input[type=text] {
+    width: 260px;
+  }
+  
+  .boutons_filtres {
+    font-size: 18px;
+    margin-right: 10px;
+    max-width: 260px;
+    padding-right: 20px;
+  }
+  
+  .info_icon_circle .fa-info {
+    font-size: 16px;
+  }
+  
+  .info_icon_circle {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 26px;
   }
 
   .conteneur_filtres .info {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /******* SECTION 2 GAUCHE (Hébergement à Marseille) ***********/
@@ -1331,6 +1739,10 @@ footer {
     height: 100%;
     margin-right: 10px;
   }
+  
+  .vignette_section2_droite p:last-child {
+  margin-top: 28px;  /* Voir pour les autres formats */
+}
 
 
   /******** SECTION 3 (Activités) *********/
@@ -1372,16 +1784,38 @@ footer {
 @media screen and (max-width : 414px) {
   /******** SECTION 1 (Zone de sélection) *************/
   .section1 h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .section1 p {
-    font-size: 22px;
+    font-size: 18px;
+  }
+  
+  input[type=text] {
+    width: 260px;
+  }
+  
+  .boutons_filtres {
+    font-size: 18px;
+    margin-right: 10px;
+    max-width: 260px;
+    padding-right: 15px;
+  }
+  
+  .info_icon_circle .fa-info {
+    font-size: 16px;
+  }
+  
+  .info_icon_circle {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 26px;
   }
 
   .conteneur_filtres .info {
-    font-size: 20px;
+    font-size: 16px;
   }
+
 
   /******* SECTION 2 GAUCHE (Hébergement à Marseille) ***********/
   .vignette_section2_gauche {
@@ -1402,6 +1836,10 @@ footer {
   .vignette_section2_droite img {
 	width: 139px;
   }
+  
+  .vignette_section2_droite p:last-child {
+  margin-top: 26px;  /* Voir pour les autres formats */
+}
 
 
   /******** SECTION 3 (Activités) *********/
@@ -1443,27 +1881,40 @@ footer {
 @media screen and (max-width : 375px) {
   /******** SECTION 1 (Zone de sélection) *************/
   .section1 h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .section1 p {
+    font-size: 16px;
+  }
+  
+  input[type=text] {
+    width: 220px;
+  }
+  
+  .conteneur_filtres h2 {
     font-size: 20px;
   }
-
-  input[type=text] {
-    width: 250px;
-  }
-
+  
   .boutons_filtres {
-    font-size: 17px;
+    font-size: 16px;
+    margin-right: 10px;
+    max-width: 260px;
+    padding-right: 5px;
   }
-
+  
+  .info_icon_circle .fa-info {
+    font-size: 14px;
+  }
+  
   .info_icon_circle {
-    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 18px;
   }
 
   .conteneur_filtres .info {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /******* SECTION 2 GAUCHE (Hébergement  à Marseille) ***********/
@@ -1526,27 +1977,40 @@ footer {
 @media screen and (max-width : 360px) {
   /******** SECTION 1 (Zone de sélection) *************/
   .section1 h1 {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .section1 p {
-    font-size: 19px;
-  }
-
-  input[type=text] {
-    width: 250px;
-  }
-
-  .boutons_filtres {
     font-size: 16px;
   }
-
+  
+  input[type=text] {
+    width: 220px;
+  }
+  
+  .conteneur_filtres h2 {
+    font-size: 20px;
+  }
+  
+  .boutons_filtres {
+    font-size: 15px;
+    margin-right: 7px;
+    max-width: 260px;
+    padding-right: 5px;
+  }
+  
+  .info_icon_circle .fa-info {
+    font-size: 14px;
+  }
+  
   .info_icon_circle {
-    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 18px;
   }
 
   .conteneur_filtres .info {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /******* SECTION 2 GAUCHE (Hébergement  à Marseille) ***********/
@@ -1580,6 +2044,14 @@ footer {
   .vignette_section2_droite p {
     font-size: 16px;
     line-height: 0.8;
+  }
+  
+  .vignette_section2_droite p:last-child {
+    margin-top: 38px;  /* Voir pour les autres formats */
+  }
+  
+  .vignette_section2_droite:nth-child(2) p:last-child {
+    margin-top: 38px;
   }
   
   #Populaires {
@@ -1626,31 +2098,43 @@ footer {
 
 /*************** VIEWPORT <= 320PX *****************/
 /************* SAMSUNG SM-J120 / iPhone 5 SE *****************/
-@media screen and (max-width : 320px) {
+@media screen and (max-width : 320px) {  
 /******** SECTION 1 (Zone de sélection) *************/
   .section1 h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .section1 p {
-    font-size: 17px;
-  }
-
-  input[type=text] {
-    width: 200px;
-  }
-
-  .boutons_filtres {
     font-size: 14px;
-    margin-right: 12px;
   }
-
+  
+  input[type=text] {
+    width: 175px;
+  }
+  
+  .conteneur_filtres h2 {
+    font-size: 18px;
+  }
+  
+  .boutons_filtres {
+    font-size: 13px;
+    margin-right: 3.5px;
+    max-width: 260px;
+    padding-right: 2px;
+  }
+  
+  .info_icon_circle .fa-info {
+    font-size: 14px;
+  }
+  
   .info_icon_circle {
-    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 18px;
   }
 
   .conteneur_filtres .info {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   /******* SECTION 2 GAUCHE (Hébergement à Marseille) ***********/
