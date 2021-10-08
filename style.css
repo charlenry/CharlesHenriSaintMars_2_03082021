@@ -1673,7 +1673,7 @@ footer {
 @media screen and (max-width : 530px) {
   /******** SECTION 1 (Zone de sélection) *************/
   .section1 h1 {
-    font-size: 34px;
+    font-size: 28px;
   }
 
   .section1 p {
@@ -1681,7 +1681,16 @@ footer {
   }
   
   input[type=text] {
-    width: 340px;
+    width: 280px;
+  }
+  
+  .conteneur_filtres .info {
+    font-size: 20px;
+  }
+  
+  /****** SECTION 2 DROITE *****/
+  .vignette_section2_droite p:last-child {
+    margin-top: 18px;  /* Voir pour les autres formats */
   }
 }
 
@@ -1775,6 +1784,53 @@ footer {
     margin-left: 16%;
   }
 
+}
+
+
+/*************** VIEWPORT <= 428PX *****************/
+/************** Mobile L *********************/
+@media screen and (max-width : 428px) {
+  /******** SECTION 1 (Zone de sélection) *************/
+  .section1 h1 {
+    font-size: 26px;
+  }
+
+  .section1 p {
+    font-size: 18px;
+  }
+  
+  input[type=text] {
+    width: 260px;
+  }
+  
+  .boutons_filtres {
+    font-size: 18px;
+    margin-right: 10px;
+    max-width: 260px;
+    padding-right: 20px;
+  }
+  
+  .info_icon_circle .fa-info {
+    font-size: 16px;
+  }
+  
+  .info_icon_circle {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 26px;
+  }
+
+  .conteneur_filtres .info {
+    font-size: 18px;
+  }
+  
+  .vignette_section2_droite h3 {
+    font-size: 16px;
+  }
+  
+  .vignette_section2_droite:nth-child(2) p:last-child {
+    margin-top: 22px;
+  }
 }
 
 
@@ -1874,6 +1930,82 @@ footer {
 
 }
 
+
+/*************** VIEWPORT <= 390PX *****************/
+@media screen and (max-width : 390px) {
+  /******** SECTION 1 (Zone de sélection) *************/
+  .section1 h1 {
+    font-size: 24px;
+  }
+
+  .section1 p {
+    font-size: 18px;
+  }
+  
+  input[type=text] {
+    width: 240px;
+  }
+  
+  .boutons_filtres {
+    font-size: 16px;
+    margin-right: 10px;
+    max-width: 260px;
+    padding-right: 10px;
+  }
+  
+  .info_icon_circle .fa-info {
+    font-size: 16px;
+  }
+  
+  .info_icon_circle {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 26px;
+  }
+
+  .conteneur_filtres .info {
+    font-size: 16px;
+  }
+}
+
+
+
+ /*************** VIEWPORT <= 384PX *****************/
+@media screen and (max-width : 384px) {
+  /******** SECTION 1 (Zone de sélection) *************/
+  .section1 h1 {
+    font-size: 24px;
+  }
+
+  .section1 p {
+    font-size: 18px;
+  }
+  
+  input[type=text] {
+    width: 240px;
+  }
+  
+  .boutons_filtres {
+    font-size: 16px;
+    margin-right: 10px;
+    max-width: 260px;
+    padding-right: 10px;
+  }
+  
+  .info_icon_circle .fa-info {
+    font-size: 16px;
+  }
+  
+  .info_icon_circle {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 26px;
+  }
+
+  .conteneur_filtres .info {
+    font-size: 16px;
+  }
+}
 
 
   /*************** VIEWPORT <= 375PX *****************/
@@ -2109,7 +2241,7 @@ footer {
   }
   
   input[type=text] {
-    width: 175px;
+    width: 180px;
   }
   
   .conteneur_filtres h2 {
@@ -2117,9 +2249,9 @@ footer {
   }
   
   .boutons_filtres {
-    font-size: 13px;
-    margin-right: 3.5px;
-    max-width: 260px;
+    font-size: 12px;
+    margin-right: 3px;
+    max-width: 240px;
     padding-right: 2px;
   }
   
