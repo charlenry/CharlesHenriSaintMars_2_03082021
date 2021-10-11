@@ -516,6 +516,15 @@ footer {
 
 }
 
+.decoration_lien {
+    color: black;
+    text-decoration: none;
+}
+
+.decoration_lien:hover {
+    color: #0065FC;
+}
+
 
 /*+++++++++++++++++++++++++++ ZONE RESPONSIVE +++++++++++++++++++++++++++++++++++++*/
 /*************** VIEWPORT <= 1520PX *******************/
