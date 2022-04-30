@@ -297,6 +297,17 @@ input:focus {
   width:  280px;
   height: 215px;
   background-color: white;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Animation de la vignette au survol de la souris */
+.hover-shadow {
+  -webkit-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+
+.hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -352,7 +363,7 @@ input:focus {
   width:  365px;
   height: 158px;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 40px;  /* Voir pour les autres formats */
 }
 
@@ -417,7 +428,7 @@ input:focus {
   width:  305px;
   height: 514px;
   border-radius: 16px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 .vignette_section3_col1_col3 img {
@@ -441,7 +452,7 @@ input:focus {
 .vignette_section3_col2, .vignette_section3_col4 {
   width:  305px;
   border-radius: 16px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 .vignette_section3_col2 img, .vignette_section3_col4 img {
@@ -663,7 +674,7 @@ footer {
     width:  280px;
     height: 148px;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 55px;  /* Voir pour les autres formats */
   }
 
