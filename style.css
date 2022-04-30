@@ -175,6 +175,9 @@ input:focus {
   border-radius: 30px;
   border: 3px solid #F2F2F2;
   height: 50px;
+  -webkit-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
 }
 
 .boutons_filtres .fas {  /* Coloration des icones des boutons de filtres */
@@ -197,7 +200,9 @@ input:focus {
 .boutons_filtres:hover {
   background-color: #0065FC;
   color: white;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
 }
 
 .conteneur_filtres {
