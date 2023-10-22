@@ -3,10 +3,10 @@
   box-sizing: border-box;
 }
 
-html {
+/* html { */
   /* Esquisse */
 /*  border: 1px solid red;*/
-}
+/* } */
 
 body {
   /* Esquisse */
@@ -212,7 +212,6 @@ input:focus {
 /************** ZONE INFO ********************/
 .info {
   display: flex;
-  align-items: center;
   align-items: center;
 }
 
@@ -1614,7 +1613,6 @@ footer {
 /*** Zone info ***/
   .conteneur_filtres .info {
     display: flex;
-    align-items: center;
     align-items: center;
   }
 
